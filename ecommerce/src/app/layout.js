@@ -24,8 +24,10 @@ export default function RootLayout({ children }) {
         <Navbar/>
         <SearchBar/>
         <Carousel/>
+        
         <Banner/>
-        <Product/>
+        <Slider/>
+       
         {children}
         <Footer/>
       </body>

@@ -77,6 +77,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@glidejs/glide@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "@glidejs/glide@npm:3.6.0"
+  checksum: 10c0/fa773b48d28989e4c9a8b986b806a52d98267a83b1fb6de3f16bdbfb2ec62b980643bc21dec7ccb710b65838e06523cc602b5dd9b1826470563329fd46b281ee
+  languageName: node
+  linkType: hard
+
 "@heroicons/react@npm:^2.1.1":
   version: 2.1.1
   resolution: "@heroicons/react@npm:2.1.1"
@@ -1740,12 +1747,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ecommerce@workspace:."
   dependencies:
+    "@glidejs/glide": "npm:^3.6.0"
     "@heroicons/react": "npm:^2.1.1"
     "@netlify/plugin-nextjs": "npm:^4.41.3"
     autoprefixer: "npm:^10.0.1"
     daisyui: "npm:^4.7.2"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.1.0"
+    glidejs: "npm:^2.1.0"
     next: "npm:14.1.0"
     postcss: "npm:^8"
     react: "npm:^18"
@@ -2578,6 +2587,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"glidejs@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "glidejs@npm:2.1.0"
+  dependencies:
+    jquery: "npm:2.2.*"
+  checksum: 10c0/ee4a7ee1b74d4c0896b3429d2bed49a516560d5a882165875865fdb4c38c26399fb11a420750faf5ca876095764cd2a791346503c9f2585ec0c4ed35e80411fb
+  languageName: node
+  linkType: hard
+
 "glob-parent@npm:^5.1.2, glob-parent@npm:~5.1.2":
   version: 5.1.2
   resolution: "glob-parent@npm:5.1.2"
@@ -3315,6 +3333,13 @@ __metadata:
   bin:
     jiti: bin/jiti.js
   checksum: 10c0/7f361219fe6c7a5e440d5f1dba4ab763a5538d2df8708cdc22561cf25ea3e44b837687931fca7cdd8cdd9f567300e90be989dd1321650045012d8f9ed6aab07f
+  languageName: node
+  linkType: hard
+
+"jquery@npm:2.2.*":
+  version: 2.2.4
+  resolution: "jquery@npm:2.2.4"
+  checksum: 10c0/407c00b1c3ccde35f091862d4b49eab27557c2f7ed9e00fe6ead32fbe8ad6b90d8af8e3fc06b176cd5f2daaae6361a0045ecf204b360d1ac4b79ec21f9930e3c
   languageName: node
   linkType: hard
 
