@@ -6,33 +6,31 @@ const Navbar = () => {
            
           <div className="navbar bg-base-100">
             <div className="flex-1">
-              <Link href="/" className="text-xl">
-                fortis_mart
-              </Link>
+            <a className="text-xl"><span className="text-blue-600">Fortis</span>Mg</a>
             </div>
            
-            <div className="hidden lg:flex space-x-4">
-              <Link href="/About" className="text-bold hover:text-blue-500">
-                <strong>MEDICINE</strong>
+            <div className="hidden lg:flex space-x-6 text-sm">
+              <Link href="/About" className="font-medium hover:text-blue-500">
+                MEDICINE
               </Link>
-              <span></span> <span></span>
-              <Link href="/lebtest" className="text-bold hover:text-blue-500">
-                <strong>LAB TESTS</strong>
-                <button className="btn btn-xs bg-orange-600">SAVE</button>
+              
+              <Link href="/lebtest" className="font-medium hover:text-blue-500">
+                LAB TESTS
+                {/* <button className="btn btn-xs bg-blue-600 text-white">SAVE</button> */}
+              </Link>
+              <Link href="/dr" className="font-medium hover:text-blue-500">
+                CONSULT DOCTORS
+              </Link>
+              <Link href="/cr" className="font-medium hover:text-blue-500">
+                CANCER CARE
+              </Link>
+              <Link href="/ar" className="font-medium hover:text-blue-500">
+                AYURVEDA
               </Link><span></span> 
-              <Link href="/dr" className="text-bold hover:text-blue-500">
-                <strong>CONSULT DOCTORS</strong>
-              </Link><span></span> 
-              <Link href="/cr" className="text-bold hover:text-blue-500">
-                <strong>CANCER CARE</strong>
-              </Link><span></span> 
-              <Link href="/ar" className="text-bold hover:text-blue-500">
-                <strong>AYURVEDA</strong>
-              </Link><span></span> 
-              <Link href="/medicine" className="text-bold hover:text-blue-500">
-                <strong>CARE PLANE</strong>
-                <button className="btn btn-xs bg-orange-600">SAVE MODE</button>
-              </Link><span></span> 
+              <Link href="/medicine" className="font-medium hover:text-blue-500">
+                CARE PLANE
+                {/* <button className="btn btn-xs bg-blue-600 text-white">SAVE MODE</button> */}
+              </Link>
               <Link href="/login" className="text-xs">
                 Login
               </Link>
@@ -44,6 +42,8 @@ const Navbar = () => {
                 offers
               </Link>
             </div>
+
+            
             <div className="flex-none">
               <div className="dropdown dropdown-end">
                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -76,6 +76,8 @@ const Navbar = () => {
                 Need Help?
               </Link>
             </div>
+
+            
             <div className="flex-none lg:hidden">
               <div className="dropdown dropdown-end">
                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -100,29 +102,29 @@ const Navbar = () => {
                 <div tabIndex={0} className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
                   <div className="card-body">
                   <Link href="/About" className="text-bold">
-                <strong>MEDICINE</strong>
+                MEDICINE
               </Link>
               <Link href="/lebtest" className="text-bold">
-                <strong>LAB TESTS</strong>
-                <button className="btn btn-xs bg-orange-600">SAVE</button>
+                LAB TESTS
+                {/* <button className="btn btn-xs bg-orange-600">SAVE</button> */}
               </Link>
               <Link href="/dr" className="text-bold">
-                <strong>CONSULT DOCTORS</strong>
+                CONSULT DOCTORS
               </Link>
               <Link href="/cr" className="text-bold">
-                <strong>CANCER CARE</strong>
+                CANCER CARE
               </Link>
               <Link href="/ar" className="text-bold">
-                <strong>AYURVEDA</strong>
+                AYURVEDA
               </Link>
               <Link href="/medicine" className="text-bold">
-                <strong>CARE PLANE</strong>
-                <button className="btn btn-xs bg-orange-600">SAVE MODE</button>
+                CARE PLANE
+                {/* <button className="btn btn-xs bg-orange-600">SAVE MODE</button> */}
               </Link>
               <Link href="/login" className="text-xs">
                 Login
               </Link>
-              <span> </span>
+              {/* <span> </span> */}
               <Link href="/singup" className="text-xs">
                 Sing Up
               </Link>
