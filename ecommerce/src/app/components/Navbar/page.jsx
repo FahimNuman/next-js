@@ -2,14 +2,16 @@ import React from 'react';
 import Link from "next/link";
 const Navbar = () => {
     return (
-        <div>
+        <div className=''>
            
           <div className="navbar bg-base-100">
             <div className="flex-1">
             <a className="text-xl"><span className="text-blue-600">Fortis</span>Mg</a>
             </div>
            
-            <div className="hidden lg:flex space-x-6 text-sm">
+            <div className="hidden lg:flex text-sm flex-grow gap-8 justify-between">
+
+            <div className='flex gap-8'>
               <Link href="/About" className="font-medium hover:text-blue-500">
                 MEDICINE
               </Link>
@@ -26,27 +28,29 @@ const Navbar = () => {
               </Link>
               <Link href="/ar" className="font-medium hover:text-blue-500">
                 AYURVEDA
-              </Link><span></span> 
+              </Link>
               <Link href="/medicine" className="font-medium hover:text-blue-500">
                 CARE PLANE
-                {/* <button className="btn btn-xs bg-blue-600 text-white">SAVE MODE</button> */}
               </Link>
-              <Link href="/login" className="text-xs">
+              </div>
+
+              <div className='flex gap-3'>
+              <Link href="/login" className="text-xs hover:text-blue-500">
                 Login
               </Link>
               <span> | </span>
-              <Link href="/singup" className="text-xs">
-                Sing Up
-              </Link><span></span> 
-              <Link href="/help" className="text-xs">
-                offers
+              <Link href="/singup" className="text-xs hover:text-blue-500">
+                Sign Up
+              </Link>
+              <Link href="/help" className="text-xs hover:text-blue-500">
+                Offers
               </Link>
             </div>
 
             
-            <div className="flex-none">
+            <div className="flex">
               <div className="dropdown dropdown-end">
-                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle  hover:text-blue-500">
                   <div className="indicator">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -65,17 +69,20 @@ const Navbar = () => {
                   
                   </div>
                 </div>
-                <div tabIndex={0} className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+                <div tabIndex={0} className=" z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
                   <div className="card-body">
                 
              
                   </div>
                 </div>
               </div>
-              <Link href="/help" className="text-xs">
+              <div className=' flex items-center'>
+              <Link href="/help" className="text-xs  hover:text-blue-500">
                 Need Help?
               </Link>
+              </div>
             </div>
+            </div>          
 
             
             <div className="flex-none lg:hidden">

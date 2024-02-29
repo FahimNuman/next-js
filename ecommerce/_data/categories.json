@@ -1,0 +1,54 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Liver Care",
+      "image": "https://example.com/liver-care-image.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Diabetes Care",
+      "image": "https://example.com/diabetes-care-image.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Heart Care",
+      "image": "https://example.com/heart-care-image.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Stomach Care",
+      "image": "https://example.com/stomach-care-image.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Liver Care",
+      "image": "https://example.com/liver-care-image.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Bone-Joint-Muscle Care",
+      "image": "https://example.com/bone-joint-muscle-care-image.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Kidney Care",
+      "image": "https://example.com/kidney-care-image.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Derma Care",
+      "image": "https://example.com/derma-care-image.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Respiratory Care",
+      "image": "https://example.com/respiratory-care-image.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Eye Care",
+      "image": "https://example.com/eye-care-image.jpg"
+    }
+  ]
+}

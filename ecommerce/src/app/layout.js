@@ -10,6 +10,7 @@ import Slider from "./components/Slider/page";
 import Carousel from "./components/Carousel/page";
 import BottomNav from "./components/BottomNav/page";
 import Posts from "./components/Posts/page";
+import NavDropDown from "./components/NavDropDown/page";
 
 
 
@@ -26,10 +27,13 @@ export default function RootLayout({ children }) {
         <ShortBanner/>
         <Navbar/>
         <BottomNav/>
+        <NavDropDown/>
         <Carousel/>
         
         <Banner/>
+        <div className="">
         <Slider/>
+        </div>
         {children}
         <Footer/>
       </body>

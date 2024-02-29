@@ -11,16 +11,16 @@ const Slider = () => {
     const slider = new Glide('.glide-03', {
       type: 'carousel',
       focusAt: 'center',
-      perView: 3,
+      perView: 6,
       autoplay: 3000,
       animationDuration: 700,
       gap: 24,
       breakpoints: {
         1024: {
-          perView: 2,
+          perView: 3,
         },
         640: {
-          perView: 1,
+          perView: 3,
         },
       },
     })
@@ -39,21 +39,6 @@ const Slider = () => {
       <div className="glide-03 relative w-full">
         <div className="overflow-hidden " data-glide-el="track">
           <ul className=" whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-            <div className="max-w-xs p-12  rounded-md shadow-md ">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtELB6BLBdGNjRrLnSK3G8fkX9m4FVF3yWlsqhBG2HCmg-Leoh-OuFCscijxBeMc87ZMo&usqp=CAU"
-                alt=""
-                className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
-              />
-              <div className="mt-6 mb-2">
-                <span className="block text-xs font-medium tracki uppercase dark:text-violet-400">
-                  Quisque
-                </span>
-                <h2 className="text-xl font-semibold tracki">
-                  Nam maximus purus
-                </h2>
-              </div>
-            </div>
             <Posts/>
           </ul>
         </div>

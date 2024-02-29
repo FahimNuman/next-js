@@ -4,10 +4,14 @@ const BottomNav = () => {
   return (
     <div>
       <div className="grid grid-cols-1 lg:flex ml-4 gap-16 mb-4">
-          <div className="w-2/3 lg:flex justify-between">
-            <details className="dropdown w-2/4 md:w-1/4">
-              <summary className="btn bg-white text-blue-600  hover:text-white  hover:bg-blue-600 hover: w-full">
-               Location
+          <div className="w-2/3 lg:flex justify-between gap-1">
+            <details className="dropdown w-2/4 md:w-1/4 ">
+              <summary className="btn btn-outline bg-white text-blue-600  hover:text-white  hover:bg-blue-600 hover: w-full">
+               <div className='flex gap-10'>
+                <p>Location</p>
+                <p>⚲</p>
+               </div>
+              
               </summary>
 
               <ul className="shadow menu dropdown-content z-[1] rounded-box bg-white">
