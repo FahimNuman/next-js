@@ -1,8 +1,22 @@
-import getAllPost from '@/app/lib/post'
+
 import React from 'react'
 
+// https://jsonplaceholder.typicode.com/posts
+//http://localhost:4000/categories
+
+async function getStaticProps(){
+  const result = await fetch('http://localhost:4000/categories',{
+    
+      next:{
+          revalidate: 5
+      }
+  }
+  )
+  return result.json();
+}
+
 export default async function Posts(){
-    const posts = await getAllPost();
+    const posts = await getStaticProps();
   return (
     <>
     {posts.map(post=>
@@ -20,15 +34,10 @@ export default async function Posts(){
       {post.id}
     </span>
     <h2 className="text-lg font-semibold tracki">
-      {post.name}
+      {post.title}
     </h2>
   </div>
 </div>
-
-   
-   
-   
-   
     )}
     </>
    

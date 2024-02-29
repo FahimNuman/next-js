@@ -15,6 +15,7 @@
     "@glidejs/glide": "^3.6.0",
     "@heroicons/react": "^2.1.1",
     "@netlify/plugin-nextjs": "^4.41.3",
+    "axios": "^1.6.7",
     "daisyui": "^4.7.2",
     "font-awesome": "^4.7.0",
     "glidejs": "^2.1.0",
