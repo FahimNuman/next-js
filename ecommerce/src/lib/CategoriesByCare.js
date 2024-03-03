@@ -1,6 +1,6 @@
 
 export default async function getAllCategoriesByCare(){
-    const result = await fetch('http://localhost:4000/categories',{
+    const result = await fetch('https://jsonplaceholder.typicode.com/posts',{
         cache:'no-cache',
         next:{
             revalidate: 5

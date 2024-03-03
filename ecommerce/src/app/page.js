@@ -9,11 +9,7 @@ export default function Home() {
   return (
     <main>
          
-         <ShortBanner/>
-        <Navbar/>
-        <BottomNav/>
-        <NavDropDown/>
-   
+
     </main>
   );
 }
