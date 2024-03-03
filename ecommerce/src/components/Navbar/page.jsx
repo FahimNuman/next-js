@@ -23,7 +23,7 @@ const Navbar = () => {
               <Link href="/dr" className="font-medium hover:text-blue-500">
                 CONSULT DOCTORS
               </Link>
-              <Link href="/cr" className="font-medium hover:text-blue-500">
+              <Link href="/" className="font-medium hover:text-blue-500">
                 CANCER CARE
               </Link>
               <Link href="/ar" className="font-medium hover:text-blue-500">

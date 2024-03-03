@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-'use client' // Mark the file as a client-side component
-
+// Mark the file as a client-side component
+'use client'
 import React, { useEffect } from 'react'
 import Glide from '@glidejs/glide'
-import Posts from '../Posts/page'
+import Posts from '../CategoryByCare/page'
 
 const Slider = () => {
   useEffect(() => {

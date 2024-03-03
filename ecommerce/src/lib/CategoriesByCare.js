@@ -1,7 +1,9 @@
-export default async function getAllPost(){
+
+export default async function getAllCategoriesByCare(){
     const result = await fetch('http://localhost:4000/categories',{
+        cache:'no-cache',
         next:{
-            revalidate: 30
+            revalidate: 5
         }
     }
     )
