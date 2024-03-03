@@ -1,56 +1,53 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Link from "next/link";
 const Navbar = () => {
     return (
-        <div className=''>
+        <div>
            
           <div className="navbar bg-base-100">
-            <div className="flex-1">
-            <a className="text-xl"><span className="text-blue-600">Fortis</span>Mg</a>
+            <div className="flex-1 ">
+              <Link href="/" className="size-22">
+              <strong>Fortis_mart</strong>
+              </Link>
             </div>
            
-            <div className="hidden lg:flex text-sm flex-grow gap-8 justify-between">
-
-            <div className='flex gap-8'>
-              <Link href="/About" className="font-medium hover:text-blue-500">
-                MEDICINE
+            <div className="hidden lg:flex space-x-4">
+              <Link href="/About" className="text-bold hover:text-blue-500">
+              <span></span>  <strong>MEDICINE</strong>
               </Link>
-              
-              <Link href="/lebtest" className="font-medium hover:text-blue-500">
-                LAB TESTS
-                {/* <button className="btn btn-xs bg-blue-600 text-white">SAVE</button> */}
-              </Link>
-              <Link href="/dr" className="font-medium hover:text-blue-500">
-                CONSULT DOCTORS
-              </Link>
-              <Link href="/" className="font-medium hover:text-blue-500">
-                CANCER CARE
-              </Link>
-              <Link href="/ar" className="font-medium hover:text-blue-500">
-                AYURVEDA
-              </Link>
-              <Link href="/medicine" className="font-medium hover:text-blue-500">
-                CARE PLANE
-              </Link>
-              </div>
-
-              <div className='flex gap-3'>
-              <Link href="/login" className="text-xs hover:text-blue-500">
+              <span></span> 
+              <Link href="/lebtest" className="text-bold hover:text-blue-500">
+                <strong>LAB TESTS</strong>
+                <button className="btn btn-xs bg-orange-600">SAVE</button>
+              </Link><span></span> 
+              <Link href="/dr" className="text-bold hover:text-blue-500">
+                <strong>CONSULT DOCTORS</strong>
+              </Link><span></span> 
+              <Link href="/cr" className="text-bold hover:text-blue-500">
+                <strong>CANCER CARE</strong>
+              </Link><span></span> 
+              <Link href="/ar" className="text-bold hover:text-blue-500">
+                <strong>AYURVEDA</strong>
+              </Link><span></span> 
+              <Link href="/medicine" className="text-bold hover:text-blue-500">
+                <strong>CARE PLANE</strong>
+                <button className="btn btn-xs bg-orange-600">SAVE MODE</button>
+              </Link><span></span> 
+              <Link href="/login" className="text-xs">
                 Login
               </Link>
               <span> | </span>
-              <Link href="/singup" className="text-xs hover:text-blue-500">
-                Sign Up
-              </Link>
-              <Link href="/help" className="text-xs hover:text-blue-500">
-                Offers
+              <Link href="/singup" className="text-xs">
+                Sing Up
+              </Link><span></span> 
+              <Link href="/help" className="text-xs">
+                offers
               </Link>
             </div>
-
-            
-            <div className="flex">
+            <div className="flex-none">
               <div className="dropdown dropdown-end">
-                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle  hover:text-blue-500">
+                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                   <div className="indicator">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -69,22 +66,17 @@ const Navbar = () => {
                   
                   </div>
                 </div>
-                <div tabIndex={0} className=" z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+                <div tabIndex={0} className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
                   <div className="card-body">
                 
              
                   </div>
                 </div>
               </div>
-              <div className=' flex items-center'>
-              <Link href="/help" className="text-xs  hover:text-blue-500">
+              <Link href="/help" className="text-xs">
                 Need Help?
               </Link>
-              </div>
             </div>
-            </div>          
-
-            
             <div className="flex-none lg:hidden">
               <div className="dropdown dropdown-end">
                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -109,29 +101,29 @@ const Navbar = () => {
                 <div tabIndex={0} className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
                   <div className="card-body">
                   <Link href="/About" className="text-bold">
-                MEDICINE
+                <strong>MEDICINE</strong>
               </Link>
               <Link href="/lebtest" className="text-bold">
-                LAB TESTS
-                {/* <button className="btn btn-xs bg-orange-600">SAVE</button> */}
+                <strong>LAB TESTS</strong>
+                <button className="btn btn-xs bg-orange-600">SAVE</button>
               </Link>
               <Link href="/dr" className="text-bold">
-                CONSULT DOCTORS
+                <strong>CONSULT DOCTORS</strong>
               </Link>
               <Link href="/cr" className="text-bold">
-                CANCER CARE
+                <strong>CANCER CARE</strong>
               </Link>
               <Link href="/ar" className="text-bold">
-                AYURVEDA
+                <strong>AYURVEDA</strong>
               </Link>
               <Link href="/medicine" className="text-bold">
-                CARE PLANE
-                {/* <button className="btn btn-xs bg-orange-600">SAVE MODE</button> */}
+                <strong>CARE PLANE</strong>
+                <button className="btn btn-xs bg-orange-600">SAVE MODE</button>
               </Link>
               <Link href="/login" className="text-xs">
                 Login
               </Link>
-              {/* <span> </span> */}
+              <span> </span>
               <Link href="/singup" className="text-xs">
                 Sing Up
               </Link>
