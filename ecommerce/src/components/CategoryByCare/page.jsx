@@ -1,7 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-async-client-component */
 'use client'
 import getAllCategoriesByCare from '@/lib/CategoriesByCare';
 import Link from 'next/link';
 import React from 'react'
+
+
 export default async function Posts() {
   const categories = await getAllCategoriesByCare();
   return (
