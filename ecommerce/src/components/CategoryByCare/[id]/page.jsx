@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Category = ({params}) => {
-    
+
   return (
     <>
     <div className="card w-96 bg-base-100 shadow-xl">
