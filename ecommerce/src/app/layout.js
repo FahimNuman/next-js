@@ -10,6 +10,7 @@ import Slider from "@/components/Slider/page";
 import Carousel from "@/components/Carousel/page";
 import BottomNav from "@/components/BottomNav/page";
 import NavDropDown from "@/components/NavDropDown/page";
+import Slider2 from "@/components/Slider2/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         <>
         <Banner/>
         <Slider/>
+        <Slider2/>
         </>
         {children}
         <Footer/>
