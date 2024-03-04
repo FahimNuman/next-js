@@ -1,6 +1,6 @@
 import React from 'react'
 
-const labTest = () => {
+const lab_Test = () => {
   return (
     <div>
    <h1>
@@ -10,4 +10,4 @@ const labTest = () => {
   )
 }
 
-export default labTest
+export default lab_Test

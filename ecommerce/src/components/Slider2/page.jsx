@@ -5,6 +5,7 @@
 import React, { useEffect } from 'react'
 import Glide from '@glidejs/glide'
 import Posts from '../CategoryByCare/page'
+import HealthCheckup from '../HealthCheckup/page'
 
 
 const Slider2 = () => {
