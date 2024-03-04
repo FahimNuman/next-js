@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import React, { useState } from 'react'
 
 const NavDropDown = () => {
@@ -120,173 +121,30 @@ const NavDropDown = () => {
               style={{ zIndex: 9999 }}
               >
                 <li>
-                  <a
-                    className="divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
-                    href="#"
-                  >
-                    Priority Ratings
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className=" hover:bg-slate-50 text-slate-400 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Priority Ratings
-                  </a>
-                </li>{' '}
-                <li>
-                  <a
-                    className=" hover:bg-slate-50 text-slate-400 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Priority Ratings
-                  </a>
-                </li>{' '}
-                <li>
-                  <a
-                    className=" hover:bg-slate-50 text-slate-400 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Priority Ratings
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className=" hover:bg-slate-50 text-slate-400 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Insights
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className=" hover:bg-slate-50 text-slate-400 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Item Mirror
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className=" hover:bg-slate-50 text-slate-400 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Support Center
-                  </a>
-                </li>
-                <li>
-                  <a
+                  <Link
                     className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
-                    href="#"
+                    href=""
                   >
-                    Priority Ratings
-                  </a>
+                    All Diseases
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
                     href="#"
                   >
-                    Priority Ratings
-                  </a>
+                    All Medicines
+                  </Link>
                 </li>{' '}
                 <li>
-                  <a
+                  <Link
                     className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
                     href="#"
                   >
-                    Priority Ratings
-                  </a>
+                   Medicines by Therapeutic Class
+                  </Link>
                 </li>{' '}
-                <li>
-                  <a
-                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Priority Ratings
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Insights
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Item Mirror
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Support Center
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
-                    href="#"
-                  >
-                    Priority Ratings
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Priority Ratings
-                  </a>
-                </li>{' '}
-                <li>
-                  <a
-                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Priority Ratings
-                  </a>
-                </li>{' '}
-                <li>
-                  <a
-                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Priority Ratings
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Insights
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Item Mirror
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href="#"
-                  >
-                    Support Center
-                  </a>
-                </li>
+
               </ul>
             )}
           </li>
