@@ -1,18 +1,14 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable @next/next/no-async-client-component */
 'use client'
 import getAllCategoriesByCare from '@/lib/CategoriesByCare';
 import Link from 'next/link';
 import React from 'react'
-
-
 export default async function Posts() {
   const categories = await getAllCategoriesByCare();
   return (
     <>
       {categories.map(category =>
-      
-        <div key={category.id} className="max-w-xs p-12    max-h-64 max-w-48 hover:bg-slate-200 active:bg-slate-100 focus:outline-none focus:ring focus:ring-slate-100 rounded-lg drop-shadow-md ">
+        
+        <div key={category.id} className="max-w-xs sm:max-w-sm p-2 rounded-md shadow-md">
            <Link href={`@/src/app/`}>
           <div className="w-24 h-24 sm:w-32 sm:h-32"> {/* Adjust width and height as per your requirement */}
             <img
@@ -27,7 +23,7 @@ export default async function Posts() {
             </span>
            
             <h2 className="text-lg font-semibold tracki">
-              {category.name}
+              {category.title}
             </h2>
 
           </div>

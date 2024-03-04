@@ -5,6 +5,7 @@
 import React, { useEffect } from 'react'
 import Glide from '@glidejs/glide'
 import Posts from '../CategoryByCare/page'
+import HealthCheckup from '../HealthCheckup/page'
 
 
 const Slider2 = () => {
@@ -48,7 +49,8 @@ const Slider2 = () => {
        
         <div className="overflow-hidden " data-glide-el="track">
           <ul className=" whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-            <Posts/>
+            <HealthCheckup/>
+            
           </ul>
        
         </div>

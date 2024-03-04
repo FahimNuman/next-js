@@ -17,7 +17,7 @@ const Navbar = () => {
               <span></span>  <strong>MEDICINE</strong>
               </Link>
               <span></span> 
-              <Link href="/lebtest" className="text-bold hover:text-blue-500">
+              <Link href="/lab_test" className="text-bold hover:text-blue-500">
                 <strong>LAB TESTS</strong>
                 <button className="btn btn-xs bg-orange-600">SAVE</button>
               </Link><span></span> 
@@ -38,11 +38,11 @@ const Navbar = () => {
                 Login
               </Link>
               <span> | </span>
-              <Link href="/singup" className="text-xs">
-                Sing Up
-              </Link><span></span> 
-              <Link href="/help" className="text-xs">
-                offers
+              <Link href="/singup" className="text-xs hover:text-blue-500">
+                Sign Up
+              </Link>
+              <Link href="/help" className="text-xs hover:text-blue-500">
+                Offers
               </Link>
             </div>
             <div className="flex-none">
