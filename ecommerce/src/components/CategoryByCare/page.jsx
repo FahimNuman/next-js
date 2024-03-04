@@ -14,7 +14,7 @@ export default async function Posts() {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtELB6BLBdGNjRrLnSK3G8fkX9m4FVF3yWlsqhBG2HCmg-Leoh-OuFCscijxBeMc87ZMo&usqp=CAU"
               alt=""
-              className="object-cover object-center w-full h-full rounded-md"
+              className="object-cover object-center w-full rounded-md h-72 max-h-24 max-w-24"
             />
           </div>
           <div className="mt-2 mb-1">

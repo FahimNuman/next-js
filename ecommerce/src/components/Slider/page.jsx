@@ -36,6 +36,10 @@ const Slider = () => {
   }, [])
   return (
     <>
+     <div className="bg-gray-50 py-5 md:px-12 px-2 flex justify-between items-center rounded-md ">
+   
+   <div className=" w-full rounded-box  z-10 relative rounded-md border ">
+   <div className=" flex whitespace-no-wrap ">
       <div className="glide-03 relative w-full">
         <div className="overflow-hidden " data-glide-el="track">
           <ul className=" whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
@@ -125,6 +129,9 @@ const Slider = () => {
             <span className="block h-2 w-2 rounded-full bg-white/20 ring-1 ring-slate-700 transition-colors duration-300 focus:outline-none"></span>
           </button>
         </div>
+      </div>
+      </div>
+      </div>
       </div>
       {/*<!-- End Carousel with indicators & controls inside --> */}
     </>
