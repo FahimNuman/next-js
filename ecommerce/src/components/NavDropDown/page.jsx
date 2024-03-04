@@ -123,7 +123,7 @@ const NavDropDown = () => {
                 <li>
                   <Link
                     className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
-                    href=""
+                    href="/all_diseases"
                   >
                     All Diseases
                   </Link>

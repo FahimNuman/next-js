@@ -7,6 +7,6 @@ export default async function getAllCategoriesByCare(){
         }
     }
     )
-
     return result.json();
 }
+
