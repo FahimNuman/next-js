@@ -42,7 +42,7 @@ const Navbar = () => {
               <Link href="/singup" className="text-xs hover:text-blue-500">
                 Sign Up
               </Link>
-              <Link href="/help" className="text-xs hover:text-blue-500">
+              <Link href="/labTest" className="text-xs hover:text-blue-500">
                 Offers
               </Link>
             </div>
