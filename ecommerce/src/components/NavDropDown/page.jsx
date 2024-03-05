@@ -156,7 +156,7 @@ const NavDropDown = () => {
             style={{ zIndex: 9999 }}
           >
             <a
-              className="text-slate-800 hover:text-slate-900"
+              className="text-slate-800 hover:text-slate-900 divider divider-start"
               href="#0"
               aria-expanded={isPersonalMenuOpen ? 'true' : 'false'}
             >
