@@ -1,15 +1,14 @@
-import ProductIndex from '../product_index/page';
-import getAllMedicine from '@/lib/allMedicineData';
-import Link from 'next/link';
+import getAllDiseases from '@/lib/allDiseageData';
 import React from 'react'
+import ProductIndex from '../product_index/page';
 export default async function Posts() {
-  const getMedicine = await getAllMedicine();
+const getDiseases = await getAllDiseases();
   return (
     <div>
       <ProductIndex />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        {getMedicine.map(medicine =>
-          <div key={medicine.id} className="card card-side bg-base-100 shadow-xl" style={{ height: '120px' }}>
+        {getDiseases.map(disease =>
+          <div key={disease.id} className="card card-side bg-base-100 shadow-xl" style={{ height: '120px' }}>
             <div className='w-1/3 flex'>
               <figure >
                 <img
@@ -20,7 +19,7 @@ export default async function Posts() {
               </figure>
             </div>
             <div className="card-body w-2/3">
-              <div className="card-title text-sm">{medicine.title}</div>
+              <div className="card-title text-sm">{disease.title}</div>
             </div>
 
           </div>
