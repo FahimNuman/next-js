@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { scroller } from 'react-scroll'
 import Glide from '@glidejs/glide'
-
+//done by numan bhai
 const Page = () => {
   const [activeLink, setActiveLink] = useState('reflecting')
 

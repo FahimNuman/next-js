@@ -11,6 +11,7 @@ const NavSection = () => {
         <Navbar/>
         <BottomNav/>
         <NavDropDown/>
+        
     </div>
   )
 }

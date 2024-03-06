@@ -7,7 +7,6 @@ export default async function Posts() {
   return (
     <>
       {categories.map(category =>
-        
         <div key={category.id} className="max-w-xs sm:max-w-sm p-2 rounded-md shadow-md">
            <Link href={`@/src/app/`}>
           <div className="w-24 h-24 sm:w-32 sm:h-32"> {/* Adjust width and height as per your requirement */}

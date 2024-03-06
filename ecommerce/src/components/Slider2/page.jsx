@@ -42,7 +42,7 @@ const Slider2 = () => {
     <>
      <div className="bg-gray-50 py-5 md:px-12 px-2 flex justify-between items-center rounded-md ">
    
-   <div className=" w-full rounded-box  z-10 relative rounded-md border ">
+   <div className=" w-full rounded-box z-10 relative rounded-md border ">
    <div className=" flex whitespace-no-wrap ">
      <div className="glide-02 relative w-full">
         {/*    <!-- Slides --> */}
