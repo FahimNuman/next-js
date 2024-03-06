@@ -112,7 +112,7 @@ const NavDropDown = () => {
                 <li>
                   <Link
                     className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href="#"
+                    href=""
                   >
                    Medicines by Therapeutic Class
                   </Link>
