@@ -1,4 +1,4 @@
-export default async function getAllDiseases(){
+export default async function getAllTherapeuticData(){
     const result = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=10',{
     
         next:{
@@ -8,5 +8,3 @@ export default async function getAllDiseases(){
     )
     return result.json();
 }
-
-

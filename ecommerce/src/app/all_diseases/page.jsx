@@ -21,7 +21,6 @@ const getDiseases = await getAllDiseases();
             <div className="card-body w-2/3">
               <div className="card-title text-sm">{disease.title}</div>
             </div>
-
           </div>
         )}
       </div>
