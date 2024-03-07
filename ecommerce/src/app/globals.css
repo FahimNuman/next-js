@@ -11,7 +11,16 @@ body {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
+/* global container-fluid */
+.container_fluid {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.widget-container {
+  padding-top: 12px;
+  padding-bottom: 24px;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
