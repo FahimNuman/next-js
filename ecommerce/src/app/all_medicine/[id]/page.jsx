@@ -3,12 +3,14 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { scroller } from 'react-scroll'
-import Glide from '@glidejs/glide'
+
 
 const Page = () => {
   const [activeLink, setActiveLink] = useState('reflecting')
 
-  const handleSetActive = () => {}
+  const handleSetActive = (to) => {
+    setActiveLink(to);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,34 +30,25 @@ const Page = () => {
     <div>
       <section className="px-5 py-10 dark:bg-gray-800 dark:text-gray-100">
         <div className="container grid grid-cols-12 mx-auto gap-y-6 md:gap-10">
-          <div className="flex flex-col justify-between col-span-12 py-2 space-y-8 md:space-y-16 md:col-span-3">
-            <div className="md:col-span-3 sm:col-span-12 table-content md:sticky sm:static top-10 md:h-screen sm:h-[100%] shadow-inner ">
-              <div className="flex flex-col w-full space-y-2 ">
-                <div className="flex w-full h-1 bg-opacity-10 dark:bg-violet-400">
-                  <a
-                    rel="noopener noreferrer"
-                    href="#"
-                    className="flex items-center justify-between w-full"
-                  >
-                    <span className="text-xs font-bold tracki uppercase">
-                      Overview
-                    </span>
-                    <svg
-                      viewBox="0 0 24 24"
-                      strokeWidth="2.5"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="w-4 strokeCurrent dark:text-violet-400"
-                    >
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
+          <div className="flex flex-col justify-between col-span-12 py-2 space-y-8 md:space-y-16 md:col-span-3 ">
+            <div className="drawer lg:drawer-open shadow-xl md:sticky">
+              <input
+                id="my-drawer-2"
+                type="checkbox"
+                className="drawer-toggle"
+              />
+              <div className="drawer-content flex flex-col items-center justify-center md:sticky">
+                
               </div>
-              <ul className="divide-y divide-slate-200 ">
-                <li className="hover:text-emerald-400">
+              <div className="drawer-side ">
+                <label
+                  htmlFor="my-drawer-2"
+                  aria-label="close sidebar"
+                  className="drawer-overlay"
+                ></label>
+                <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content divide-y divide-slate-200 text-clip overflow-hidden">
+                  {/* Sidebar content here */}
+                  <li className="hover:text-emerald-400">
                   <Link
                     className={`${
                       activeLink === 'reflectizsng'
@@ -225,9 +218,11 @@ const Page = () => {
                     <span>User feedback </span>
                   </Link>
                 </li>
-              </ul>
+                </ul>
+              </div>
             </div>
           </div>
+
           <div className="relative flex col-span-12 bg-center bg-no-repeat bg-cover dark:bg-gray-500 xl:col-span-6 lg:col-span-5 md:col-span-9 min-h-96">
             <div className="md:col-span-9 sm:col-span-12">
               <div className="flex-1 p-6 sm:mx-6 sm:px-0 border-b-2 p-6">
@@ -258,14 +253,14 @@ const Page = () => {
                 <p className="font-bold text-sm">MARKETER</p>
                 <a
                   href="www.google.com"
-                  className="text-xs group-hover:underline group-focus:underline"
+                  className="text-xs underline"
                 >
                   Abbott
                 </a>
                 <p className="font-bold text-sm">SALT COMPOSITION</p>
                 <a
                   href="www.google.com"
-                  className="text-xs group-hover:underline group-focus:underline"
+                  className="text-xs underline"
                 >
                   Amoxycillin (500mg) + Clavulanic Acid (125mg)
                 </a>
@@ -273,7 +268,7 @@ const Page = () => {
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="inline-flex items-center py-2 space-x-2 text-sm dark:text-violet-400 group-hover:underline group-focus:underline"
+                  className="inline-flex items-center py-2 space-x-2 text-sm dark:text-violet-400 underline"
                 >
                   <span className="text-orange-400">
                     <span className="text-xl">Cl</span>ick here to view all
@@ -388,7 +383,9 @@ const Page = () => {
                 id="details"
                 className="border-b-2 p-6 dark:bg-gray-800 dark:text-gray-100"
               >
-                <p className="text-sm font-bold">SIDE EFFECTS OF AMOXYCLAV TABLET</p>
+                <p className="text-sm font-bold">
+                  SIDE EFFECTS OF AMOXYCLAV TABLET
+                </p>
                 <br />
                 <p className="text-sm text-salt-400">
                   Amoxyclav 625 Tablet contains two medicines, Amoxycillin and
@@ -398,12 +395,12 @@ const Page = () => {
                   activity of Amoxycillin against bacteria.
                 </p>
                 <br />
-                
-                <button className="btn rounded-full" disabled="disabled">Common side effects of Amoxyclav</button>
-                
+
+                <button className="btn rounded-full" disabled="disabled">
+                  Common side effects of Amoxyclav
+                </button>
               </div>
               <article className="px-[40px]">
-                
                 <section id="howtouse">
                   <h1 className="text-[50px] font-bold">How To Use</h1>
                   <p>
@@ -420,11 +417,15 @@ const Page = () => {
               </article>
             </div>
           </div>
+          
           <div className="hidden py-2 xl:col-span-3 lg:col-span-4 md:hidden lg:block">
             <>
-              <div className="overflow-hidden rounded bg-white text-slate-500 shadow-md shadow-slate-200">
-                <div className="p-6">
-                  <header className="mb-4">
+              <div className="overflow-hidden rounded bg-white text-slate-500 shadow-md shadow-slate-200 ">
+                <div className="p-6 ">
+                <div className="overflow-hidden bg-white rounded shadow-md text-slate-500 shadow-slate-200">
+        <div className="p-6">5,967 people viewed this recently</div>
+      </div>
+                  <header className="mb-4 ">
                     <h3 className="text-xl font-medium text-slate-700">
                       Greek breakfast
                     </h3>
@@ -446,7 +447,7 @@ const Page = () => {
             <br></br>
             <>
               <div className="overflow-hidden bg-white rounded shadow-md text-slate-500 shadow-slate-200 ">
-                <div className="p-6">
+                <div className="p-6 text-xl font-medium">
                   Earliest delivery by Tomorrow Delivering to: 110020, New Delhi
                   Down Arrow Icon
                 </div>
@@ -456,7 +457,7 @@ const Page = () => {
             <>
               <div className="overflow-hidden bg-white rounded shadow-md text-slate-500 shadow-slate-200 border-dashed border-2 border-indigo-600">
                 <div className="p-6">
-                  Earliest delivery by Tomorrow Delivering to: 110020, New Delhi
+                 <span className="text-xl font-medium">Earliest delivery by</span>  Tomorrow Delivering to: 110020, New Delhi
                   Down Arrow Icon
                 </div>
               </div>
