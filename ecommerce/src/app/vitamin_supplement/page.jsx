@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AllMedicines = () => {
+const vitamin_supplement = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const AllMedicines = () => {
     );
 };
 
-export default AllMedicines;
+export default vitamin_supplement;
