@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 // components/AlphabetBoxes.js
 import Link from 'next/link';
 import React from 'react';

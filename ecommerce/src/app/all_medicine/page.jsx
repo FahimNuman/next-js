@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import ProductIndex from '../product_index/page';
 import getAllMedicine from '@/lib/allMedicineData';
 import Link from 'next/link';
@@ -20,7 +21,7 @@ export default async function Posts() {
               </figure>
             </div>
             <div className="card-body w-2/3">
-              <div className="card-title text-sm">{medicine.title}</div>
+              <Link href="/all_medicine/id" className="card-title text-sm">{medicine.title}</Link>
             </div>
 
           </div>
