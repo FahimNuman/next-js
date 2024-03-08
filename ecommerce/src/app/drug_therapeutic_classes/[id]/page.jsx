@@ -4,9 +4,7 @@ import getAllTherapeuticData from '@/lib/allTherapeuticData';
 
 export default async function therapeuticMedicine({params}) {
   const therapeuticMedicine = await getAllTherapeuticData();
-
-  const filteredData = therapeuticMedicine.filter(item => item.id === parseInt(params.id, 10));
-  console.log(filteredData);
+  // const filteredData = therapeuticMedicine.filter(item => item.id === parseInt(params.id, 10));
   return (
     <div>
       <div className="grid grid-cols-1 mt-3 ml-4">
@@ -18,7 +16,7 @@ export default async function therapeuticMedicine({params}) {
             Human insulin basal are types of insulin that are prescribed to treat both type 1 and type 2 diabetes mellitus. These are slower to act and last longer than regular human insulin. Such insulins help to control the blood sugar levels while fasting, in between meals and overnight.
           </h5>
         </div>
-        {filteredData.map(index =>
+        {therapeuticMedicine.map(index =>
           <div key="" className="card card-side bg-base-100 shadow-xl flex w-full mb-2">
             <div className="col-span-1 p-1 flex justify-items-center">
               <figure>
