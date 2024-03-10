@@ -17,7 +17,10 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme='light'>
       <body className={inter.className}>
       <NavSection/>
-        {children}
+      <div className="">
+      {children}
+      </div>
+        
         <Footer/>
       </body>
     </html>

@@ -52,7 +52,7 @@ const NavDropDown = () => {
   }
 
   return (
-    <div className="navbar bg-base-100 mt-0.5 z-100 max-h-px max-h-0"  style={{ zIndex: 9999 }}>
+    <div className="navbar bg-base-100 z-100"  style={{ zIndex: 9999 }}>
       <nav className="flex justify-center">
         <ul className="flex flex-wrap items-center font-medium text-sm">
           <li className="p-4 lg:px-8">
@@ -112,7 +112,7 @@ const NavDropDown = () => {
                 <li>
                   <Link
                     className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href=""
+                    href="/drug_therapeutic_classes"
                   >
                    Medicines by Therapeutic Class
                   </Link>

@@ -12,27 +12,27 @@ const Navbar = () => {
               </Link>
             </div>
            
-            <div className="hidden lg:flex space-x-4">
-              <Link href="/About" className="text-bold hover:text-blue-500">
+            <div className="hidden lg:flex space-x-2">
+              <Link href="/About" className="font-base hover:text-blue-500">
               <span></span>  <strong>MEDICINE</strong>
               </Link>
               <span></span> 
-              <Link href="/lab_test" className="text-bold hover:text-blue-500">
+              <Link href="/lab_test" className="font-base hover:text-blue-500">
                 <strong>LAB TESTS</strong>
-                <button className="btn btn-xs bg-orange-600">SAVE</button>
+                <button className="btn btn-xs bg-blue-500">SAVE</button>
               </Link><span></span> 
-              <Link href="/dr" className="text-bold hover:text-blue-500">
+              <Link href="/dr" className="font-base hover:text-blue-500">
                 <strong>CONSULT DOCTORS</strong>
               </Link><span></span> 
-              <Link href="/cr" className="text-bold hover:text-blue-500">
+              <Link href="/cr" className="font-base hover:text-blue-500">
                 <strong>CANCER CARE</strong>
               </Link><span></span> 
-              <Link href="/ar" className="text-bold hover:text-blue-500">
-                <strong>AYURVEDA</strong>
+              <Link href="/product" className="font-base hover:text-blue-500">
+                <strong>Product</strong>
               </Link><span></span> 
-              <Link href="/medicine" className="text-bold hover:text-blue-500">
+              <Link href="/medicine" className="font-base hover:text-blue-500">
                 <strong>CARE PLANE</strong>
-                <button className="btn btn-xs bg-orange-600">SAVE MODE</button>
+                <button className="btn btn-xs bg-blue-500">SAVE MODE</button>
               </Link><span></span> 
               <Link href="/login" className="text-xs">
                 Login

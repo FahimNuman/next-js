@@ -1,0 +1,239 @@
+{
+    "drug_therapeutic_classes": [
+      {
+        "id": 1,
+        "parent": "Anti Diabetic",
+        "children": [
+          "Human Insulin Basal",
+          "Human Insulin Premix",
+          "Human Insulin Rapid",
+          "Human Insulins And Analogues",
+          "Insulin Analogues Basal",
+          "Insulin Analogues Rapid",
+          "Oral Antidiabetics",
+          "Other Drugs Used In Diabetes"
+        ]
+      },
+      {
+        "id": 2,
+        "parent": "Anti Infectives",
+        "children": [
+          "All Other Anti Infectives",
+          "Amebicides",
+          "Aminoglycosides",
+          "Anthelmintics Excluding Schistosomicides",
+          "Anti Flu Drugs",
+          "Antitubercular Products",
+          "Antivirals Excluding Hiv Products",
+          "Broad Spectrum Penicillins",
+          "Carbenicillin And Similar Types",
+          "Cephalosporins",
+          "Chloramphenicol And Combinations",
+          "Drugs For Treatment Of Lepra",
+          "Fluoroquinolones",
+          "Hiv Antivirals",
+          "Macrolides And Similar Types",
+          "Medium And Narrow Spectrum Penicillins",
+          "Other Antibacterials",
+          "Other Anti Parasitic Agents",
+          "Other Beta Lactam Antibacterials Excluding Penicillins Cephalosporins",
+          "Schistosomicides",
+          "Systemic Agents For Fungal Infections",
+          "Systemic Sulphonamides Excluding Trimethoprim Combinations",
+          "Tetracyclines And Combinations",
+          "Trichomonacides",
+          "Trimethoprim And Similar Formulations"
+        ]
+      },
+      {
+        "id": 3,
+        "parent": "Anti Malarials",
+        "children": [
+          "Other Anti Malarials"
+        ]
+      },
+      {
+        "id": 4,
+        "parent": "Anti Neoplastics",
+        "children": [
+          "Alkylating Agents",
+          "All Other Antineoplastics",
+          "Antimetabolites",
+          "Antineoplastic Antibiotics",
+          "Anti Tnf Products",
+          "Cytostatic Hormone Antagonists",
+          "Cytostatic Hormones",
+          "Immunostimulating Agents Excluding Interferons",
+          "Immunosuppressive Agents",
+          "Interferons",
+          "Vinca Alkaloids And Other Plant Products"
+        ]
+      },
+      {
+        "id": 5,
+        "parent": "Blood Related",
+        "children": [
+          "Antagonists Antidotes To Anticoagulants",
+          "Antifibrinolytics",
+          "Chelating Agents",
+          "Detoxifying Agents For Antineoplastic Treatment",
+          "Dextrans",
+          "Direct Factor Xa Inhibitors",
+          "Electrolyte Solutions",
+          "Erythropoietin Products",
+          "Haematinics",
+          "Heparins",
+          "Hyaluronidase",
+          "Irrigating Solutions",
+          "Liver Extracts And Combinations With B12",
+          "Other Antithrombotic Agents Blood",
+          "Platelet Aggregation Inhibitors",
+          "Proteinase Inhibitors",
+          "Solutions For Osmotic Therapy",
+          "Standard Solutions",
+          "Systemic Heamostatics",
+          "Vitamin K Antagonists"
+        ]
+      },
+      {
+        "id": 6,
+        "parent": "Cardiac",
+        "children": [
+          "Ace Inhibitors Combined With Anti Hypertensives",
+          "Ace Inhibitors Combined With Diuretics",
+          "Ace Inhibitors Plain"
+        ]
+      },
+      {
+        "id": 7,
+        "parent": "Derma",
+        "children": [
+          "Anti Dandruff",
+          "Anti Pruritics Including Topical Antihistamines Anaesthetics Etc",
+          "Antiseptics And Disinfectants Human Use",
+          "Demelanising Agents",
+          "Ectoparasiticides Including Scabicides",
+          "Emollients Protectives",
+          "Haircare Products",
+          "Melanising Agents",
+          "Oral Anti Acne Preparations",
+          "Other Dermatological Preparations",
+          "Other Non Steroidal Products For Inflammatory Skin Disorders",
+          "Plain Topical Corticosteroids",
+          "Skin Dermal Epidermal Preparations",
+          "Systemic Antipsoriasis Prodcuts",
+          "Topical Anti Acne Preparations",
+          "Topical Antibiotics And Or Sulphonamids",
+          "Topical Antipsoriasis Products",
+          "Topical Antivirals",
+          "Topical Corticosteroid Combinations",
+          "Topical Dermatological Antifungals"
+        ]
+      },
+      {
+        "id": 8,
+        "parent": "Gastro Intestinal",
+        "children": [
+          "All Other Antidiarrhoeals",
+          "All Other Anti Ulcerants"
+        ]
+      },
+      {
+        "id": 9,
+        "parent": "Gynaecological",
+        "children": [
+          "Agents For Fungal Infections",
+          "Androgens Excluding G3E G3F"
+        ]
+      },
+      {
+        "id": 10,
+        "parent": "Hormones",
+        "children": [
+          "Acth",
+          "Anabolic Hormones Systemic"
+        ]
+      },
+      {
+        "id": 11,
+        "parent": "Neuro Cns",
+        "children": [
+          "All Other Cns Drugs",
+          "Anti Alzheimer Products"
+        ]
+      },
+      {
+        "id": 12,
+        "parent": "Ophthal",
+        "children": [
+          "Artificial Tears And Ocular Lubricants",
+          "Miotics And Antiglaucoma Preparations"
+        ]
+      },
+      {
+        "id": 13,
+        "parent": "Ophthal Otologicals",
+        "children": [
+          "Eye Ear Anti Infectives",
+          "Eye Ear Anti Infectives Corticosteroid Combinations"
+        ]
+      },
+      {
+        "id": 14,
+        "parent": "Others",
+        "children": [
+          "Allergens",
+          "All Other Non Therapeutic Products"
+        ]
+      },
+      {
+        "id": 15,
+        "parent": "Otologicals",
+        "children": [
+          "Other Otologicals",
+          "Otological Anti Infectives"
+        ]
+      },
+      {
+        "id": 16,
+        "parent": "Pain Analgesics",
+        "children": [
+          "All Other Musculoskeletal Products",
+          "Anaesthetics General Inhalation"
+        ]
+      },
+      {
+        "id": 17,
+        "parent": "Respiratory",
+        "children": [
+          "All Other Anti Asthma And Copd Products",
+          "Antitussive Bronchodilator Expectorant"
+        ]
+      },
+      {
+        "id": 18,
+        "parent": "Urology",
+        "children": [
+          "All Other Urological Products",
+          "Benign Prostatic Hypertrophy Bph Products"
+        ]
+      },
+      {
+        "id": 19,
+        "parent": "Vaccines",
+        "children": [
+          "All Other Vaccines",
+          "Antitoxic Sera"
+        ]
+      },
+      {
+        "id": 20,
+        "parent": "Vitamins Minerals Nutrients",
+        "children": [
+          "Amino Acid Solutions Except Those Containing Fats",
+          "Appetite Stimulants"
+        ]
+      }
+    ]
+  }
+  
