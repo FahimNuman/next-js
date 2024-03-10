@@ -47,10 +47,15 @@ export default function page() {
                     <div class="flex items-center ml-2">Get a valid prescription</div>
                   </div>
                 </div>
+                <div class="flex mt-6">
+                <div class="col-3">
+                  <button className={custom.PrimaryButton__button___2SpZs}>
+                    <span class={` ${custom.bodySemiBold}  ${custom.PrimaryButton__btnText___1hefF} `}>Consult now</span>
+                    </button>
+                    </div>
               </div>
-              <div class="flex mt-6">
-                <div class="col-3"><button className={custom.PrimaryButton__button___2SpZs}><span class="bodySemiBold PrimaryButton__btnText___1hefF">Consult now</span></button></div>
               </div>
+            
             </div>
             <img src="https://onemg.gumlet.io/marketing/793368e4-7232-45b3-9690-2fc81da12287.svg" alt="" title="" />
           </div>

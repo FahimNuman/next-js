@@ -13,6 +13,16 @@
     padding: 0 12px;
   }
 
+  .bodySemiBold {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.PrimaryButton__btnText___1hefF {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
   .LandingPage__wrapper___2mxOA {
     position: relative;
