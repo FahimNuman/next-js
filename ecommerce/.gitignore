@@ -37,3 +37,8 @@ next-env.d.ts
 
 # yarn
 yarn.lock
+
+# Netlify build files
+.netlify/
+netlify.toml
+
