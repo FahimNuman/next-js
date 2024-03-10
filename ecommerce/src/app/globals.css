@@ -10,18 +10,11 @@ body {
   overflow-x: hidden;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-/* global container-fluid */
-.container-fluid {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 70px;
+.product_short_images img{
+  height: 51px;
+  width: 51px;
 }
 
-.widget-container {
-  padding-top: 12px;
-  padding-bottom: 24px;
-}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
