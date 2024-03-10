@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-async-client-component */
 'use client'
 import getAllCategoriesByCare from '@/lib/CategoriesByCare';
 import Link from 'next/link';
@@ -9,7 +11,7 @@ export default async function Posts() {
       {categories.map(category =>
         <div key={category.id} className="max-w-xs sm:max-w-sm p-2 rounded-md shadow-md">
            <Link href={`@/src/app/`}>
-          <div className="w-24 h-24 sm:w-32 sm:h-32"> {/* Adjust width and height as per your requirement */}
+          <div className="w-24 h-24 sm:w-32 sm:h-24"> {/* Adjust width and height as per your requirement */}
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtELB6BLBdGNjRrLnSK3G8fkX9m4FVF3yWlsqhBG2HCmg-Leoh-OuFCscijxBeMc87ZMo&usqp=CAU"
               alt=""
@@ -18,11 +20,11 @@ export default async function Posts() {
           </div>
           <div className="mt-2 mb-1">
             <span className="block text-xs font-medium tracki uppercase">
-              {category.id}
+              
             </span>
            
             <h2 className="text-lg font-semibold tracki">
-              {category.title}
+             
             </h2>
 
           </div>

@@ -133,7 +133,7 @@ const NavDropDown = () => {
               href="#0"
               aria-expanded={isPersonalMenuOpen ? 'true' : 'false'}
             >
-              Personal Care
+              Vitamins & Supplements
             </a>
             <button
               className="shrink-0 p-1"
@@ -157,21 +157,22 @@ const NavDropDown = () => {
               style={{ zIndex: 9999 }}
               >
                 <li>
-                  <a
-                    className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
-                    href="#"
+                <Link
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="/vitamin_supplement"
                   >
-                    Priority Ratings
-                  </a>
+                   Vitamin & Supplements
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href="#"
+                    href="/vitamin_supplement"
                   >
-                    Priority Ratings
-                  </a>
+                   Vitamin & Supplements
+                  </Link>
                 </li>{' '}
+
                 <li>
                   <a
                     className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
