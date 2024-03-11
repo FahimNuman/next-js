@@ -31,9 +31,9 @@ export default function page() {
           <div class="flex items-center justify-between">
             <div>
               <div class="container-fluid">
-                <div className = {`${custom.l1SemiBold} mt-2`}>Online doctor consultation with qualified doctors</div>
-                    <div className = {`${custom.l3Regular} ${custom.textSecondary}`}>Starting at ₹199</div>
-                  <div className = {`flex mt-6 ${custom.PageTitleLanding__flexGap___IOaZ3}`}>
+                <div className={`${custom.l1SemiBold} mt-2`}>Online doctor consultation with qualified doctors</div>
+                <div className={`${custom.l3Regular} ${custom.textSecondary}`}>Starting at ₹199</div>
+                <div className={`flex mt-6 ${custom.PageTitleLanding__flexGap___IOaZ3}`}>
                   <div class="flex">
                     <div class="flex items-center"><img src="https://onemg.gumlet.io/marketing/e7391473-ce45-403b-ae9e-04f25674874c.svg" alt="" title="" width="50px" /></div>
                     <div class="flex items-center ml-2">Talk within 30 min</div>
@@ -48,19 +48,20 @@ export default function page() {
                   </div>
                 </div>
                 <div class="flex mt-6">
-                <div class="col-3">
-                  <button className={custom.PrimaryButton__button___2SpZs}>
-                    <span class={` ${custom.bodySemiBold}  ${custom.PrimaryButton__btnText___1hefF} `}>Consult now</span>
+                  <div class="col-3">
+                    <button className={custom.PrimaryButton__button___2SpZs}>
+                      <span class={` ${custom.bodySemiBold}  ${custom.PrimaryButton__btnText___1hefF} `}>Consult now</span>
                     </button>
-                    </div>
+                  </div>
+                </div>
               </div>
-              </div>
-            
+
             </div>
             <img src="https://onemg.gumlet.io/marketing/793368e4-7232-45b3-9690-2fc81da12287.svg" alt="" title="" />
           </div>
         </div>
       </div>
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="bg-white p-4 shadow-lg rounded-lg">
           <div class="text-3xl font-bold">30L+</div>
@@ -75,37 +76,43 @@ export default function page() {
           <div class="text-sm">Specialities</div>
         </div>
       </div>
+
       <DoctorConCarousel />
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className={custom.LandingPage__feature___1ExkC}>
-          <div className="LandingPage__image___1aIIW justify-center "><img style={{ width: '60px' }} src="https://www.1mg.com/images/confidential.svg" alt="100% confidential discussion" /></div>
-          <div class="font-bold">100% Confidential</div>
-          <div class={custom.LandingPage__text___1rYkw}>All advice & consultations are completely confidential. You can also delete chats whenever you want.</div>
+          <div className="flex justify-center ">
+            <img style={{ width: '80px' }} src="https://www.1mg.com/images/confidential.svg" alt="100% confidential discussion" />
+          </div>
+          <div class="font-bold text-center my-6">100% Confidential</div>
+          <div className={`${custom.LandingPage__text___1rYkw} text-center`}>All advice & consultations are completely confidential. You can also delete chats whenever you want.</div>
         </div>
 
         <div className={custom.LandingPage__feature___1ExkC}>
-          <div className={custom.LandingPage__image___1aIIW}><img style={{ width: '60px' }} src="https://www.1mg.com/images/certified.svg" alt="Certified doctors consultation" /></div>
-          <div class="font-bold">Certified Doctors</div>
-          <div class={custom.LandingPage__text___1rYkw}>We offer quality healthcare through our network of certified and experienced doctors.</div>
+          <div className="flex justify-center ">
+            <img style={{ width: '80px' }} src="https://www.1mg.com/images/certified.svg" alt="100% confidential discussion" />
+          </div>
+          <div class="font-bold text-center my-6">Certified Doctors</div>
+          <div className={`${custom.LandingPage__text___1rYkw} text-center`}>All advice & consultations are completely confidential. You can also delete chats whenever you want.</div>
         </div>
-
         <div className={custom.LandingPage__feature___1ExkC}>
-          <div className={custom.LandingPage__image___1aIIW}><img style={{ width: '60px' }} src="https://www.1mg.com/images/convenience.svg" alt="Seek expert opinion anytime, anywhere" /></div>
-          <div class="font-bold">Convenience</div>
-          <div class={custom.LandingPage__text___1rYkw}>Forget the hassle of long queues and rush hour. Seek expert opinion anytime, anywhere.</div>
+          <div className="flex justify-center ">
+            <img style={{ width: '80px' }} src="https://www.1mg.com/images/costEffective.svg" alt="100% confidential discussion" />
+          </div>
+          <div class="font-bold text-center my-6">Convenience</div>
+          <div className={`${custom.LandingPage__text___1rYkw} text-center`}>All advice & consultations are completely confidential. You can also delete chats whenever you want.</div>
         </div>
-
         <div className={custom.LandingPage__feature___1ExkC}>
-          <div className={custom.LandingPage__image___1aIIW}><img style={{ width: '60px' }} src="https://www.1mg.com/images/costEffective.svg" alt="Affordable, cost effective, and economical" /></div>
-          <div class="font-bold">Cost Effective</div>
-          <div class={custom.LandingPage__text___1rYkw}>We provide medical assistance on non-urgent queries for free. Fee starting at ₹50 for faster response to queries.</div>
+          <div className="flex justify-center ">
+            <img style={{ width: '80px' }} src="https://www.1mg.com/images/confidential.svg" alt="100% confidential discussion" />
+          </div>
+          <div class="font-bold text-center my-6">Cost Effective</div>
+          <div className={`${custom.LandingPage__text___1rYkw} text-center`}>All advice & consultations are completely confidential. You can also delete chats whenever you want.</div>
         </div>
       </div>
 
-
       <div>
-        <div className='font-bold text-2xl text-center mb-16'>
+        <div className='font-bold text-2xl text-center my-16'>
           <h1>Frequently Asked Questions</h1>
         </div>
         <div class="">
@@ -155,13 +162,48 @@ export default function page() {
       </div>
 
       <div class={custom.LandingPage__join_us_wrapper___2DKaM}>
-        <div class={custom.LandingPage__image___1aIIW}><img alt="Online Doctor Consultation Icon" src="https://www.1mg.com/images/oc_doctor.svg"/></div>
+        <div class={custom.LandingPage__image___1aIIW}><img alt="Online Doctor Consultation Icon" src="https://www.1mg.com/images/oc_doctor.svg" /></div>
         <div class={custom.LandingPage__text___1rYkw}>
           <div class={custom.LandingPage__heading___2FXrb}>Are you a doctor ?</div>
           <div class={custom.LandingPage__desc___uA8nC}>Be a part of our panel of specialists and connect with your patients from anywhere.</div>
           <button className={`${custom.PrimaryButton__button___2SpZs} w-1/2`}>JOIN US</button>
         </div>
       </div>
+
+
+      <div class={custom.style__top_bar___5ZPPN}>
+        <div className={`${custom.style__top_head___2h8g} flex justify-center font-bold`}>
+          <h2>Bangladeshi LARGEST HEALTHCARE PLATFORM</h2>
+        </div>
+        <div class={`${custom.style__flex_box____V1Y1} ${custom.style__stats_bar___w397H}`} >
+          <div>
+            <div class={custom.style__stats_num___3Ns_4}>260m+</div>
+            <div class={custom.style__stats_text___DUvDf}>Visitors</div>
+          </div>
+          <div>
+            <div class={custom.style__stats_num___3Ns_4}>31m+</div>
+            <div class={custom.style__stats_text___DUvDf}>Orders Delivered</div>
+          </div>
+          <div>
+            <div class={custom.style__stats_num___3Ns_4}>1800+</div>
+            <div class={custom.style__stats_text___DUvDf}>Cities</div>
+          </div>
+        </div>
+        <div class={custom.style__border_btm___1wdot}></div>
+        <div class={`${custom.style__flex_box____V1Y1} ${custom.style__down_bar___3FV6g}`} >
+          <div class={`${custom.style__free_text___3jZ7n} ${custom.style__f20___2opYM}`}>Get the link to download App</div>
+          <div class="style__input-box___7akGm">
+            <form className={custom.input_box_style}>
+              <input  id="phoneNumber" className="border-none bg-slate-50 p-2" type="tel" placeholder="Enter Phone Number" maxlength="10" autocomplete="off" pattern="[6-9]\d{9}" title="Please enter valid 10 digits" required="" value="" />
+              <button type="submit" class={custom.style__next_button___3J4Nx}>
+                Send Link
+              </button>
+            </form>
+          </div>
+          <div class="style__cap-wrap___38IWm"></div>
+        </div>
+      </div>
+
 
     </div>
   )

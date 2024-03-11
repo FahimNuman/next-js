@@ -8,7 +8,7 @@ const Navbar = () => {
           <div className="navbar bg-base-100">
             <div className="flex-1 ">
               <Link href="/" className="size-22">
-              <strong>Fortis_mart</strong>
+              <strong>Fortis Mart</strong>
               </Link>
             </div>
            
@@ -21,7 +21,7 @@ const Navbar = () => {
                 <strong>LAB TESTS</strong>
                 <button className="btn btn-xs bg-blue-500">SAVE</button>
               </Link><span></span> 
-              <Link href="/dr" className="font-base hover:text-blue-500">
+              <Link href="/online-doctor-consultation" className="font-base hover:text-blue-500">
                 <strong>CONSULT DOCTORS</strong>
               </Link><span></span> 
               <Link href="/cr" className="font-base hover:text-blue-500">
