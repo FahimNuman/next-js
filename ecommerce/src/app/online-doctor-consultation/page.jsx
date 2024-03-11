@@ -50,7 +50,7 @@ export default function page() {
                 <div class="flex mt-6">
                   <div class="col-3">
                     <button className={custom.PrimaryButton__button___2SpZs}>
-                      <span class={` ${custom.bodySemiBold}  ${custom.PrimaryButton__btnText___1hefF} `}>Consult now</span>
+                      <span className={` ${custom.bodySemiBold}  ${custom.PrimaryButton__btnText___1hefF} `}>Consult now</span>
                     </button>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ export default function page() {
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className={custom.LandingPage__feature___1ExkC}>
           <div className="flex justify-center ">
-            <img style={{ width: '80px' }} src="https://www.1mg.com/images/confidential.svg" alt="100% confidential discussion" />
+            <img style={{ width: '80px', height:'80px' }} src="https://www.1mg.com/images/confidential.svg" alt="100% confidential discussion" />
           </div>
           <div class="font-bold text-center my-6">100% Confidential</div>
           <div className={`${custom.LandingPage__text___1rYkw} text-center`}>All advice & consultations are completely confidential. You can also delete chats whenever you want.</div>
@@ -90,21 +90,21 @@ export default function page() {
 
         <div className={custom.LandingPage__feature___1ExkC}>
           <div className="flex justify-center ">
-            <img style={{ width: '80px' }} src="https://www.1mg.com/images/certified.svg" alt="100% confidential discussion" />
+            <img style={{ width: '80px', height:'80px' }} src="https://www.1mg.com/images/certified.svg" alt="100% confidential discussion" />
           </div>
           <div class="font-bold text-center my-6">Certified Doctors</div>
           <div className={`${custom.LandingPage__text___1rYkw} text-center`}>All advice & consultations are completely confidential. You can also delete chats whenever you want.</div>
         </div>
         <div className={custom.LandingPage__feature___1ExkC}>
           <div className="flex justify-center ">
-            <img style={{ width: '80px' }} src="https://www.1mg.com/images/costEffective.svg" alt="100% confidential discussion" />
+            <img style={{ width: '80px', height:'80px' }} src="https://www.1mg.com/images/convenience.svg" alt="100% confidential discussion" />
           </div>
           <div class="font-bold text-center my-6">Convenience</div>
           <div className={`${custom.LandingPage__text___1rYkw} text-center`}>All advice & consultations are completely confidential. You can also delete chats whenever you want.</div>
         </div>
         <div className={custom.LandingPage__feature___1ExkC}>
           <div className="flex justify-center ">
-            <img style={{ width: '80px' }} src="https://www.1mg.com/images/confidential.svg" alt="100% confidential discussion" />
+            <img style={{ width: '80px', height:'80px' }} src="https://www.1mg.com/images/costEffective.svg" alt="100% confidential discussion" />
           </div>
           <div class="font-bold text-center my-6">Cost Effective</div>
           <div className={`${custom.LandingPage__text___1rYkw} text-center`}>All advice & consultations are completely confidential. You can also delete chats whenever you want.</div>
@@ -166,7 +166,7 @@ export default function page() {
         <div class={custom.LandingPage__text___1rYkw}>
           <div class={custom.LandingPage__heading___2FXrb}>Are you a doctor ?</div>
           <div class={custom.LandingPage__desc___uA8nC}>Be a part of our panel of specialists and connect with your patients from anywhere.</div>
-          <button className={`${custom.PrimaryButton__button___2SpZs} w-1/2`}>JOIN US</button>
+          <button className={`${custom.PrimaryButton__button___2SpZs} `}>JOIN US</button>
         </div>
       </div>
 
