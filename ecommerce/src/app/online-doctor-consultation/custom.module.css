@@ -1,125 +1,233 @@
 .PrimaryButton__button___2SpZs {
-    width: 100%;
-    background-color: #ff6f61;
-    height: 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    padding: 0 12px;
-  }
-
-  .bodySemiBold {
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
+  width: 100%;
+  background-color: #ff6f61;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0 12px;
 }
+
+.bodySemiBold {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
 .PrimaryButton__btnText___1hefF {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-  .LandingPage__wrapper___2mxOA {
-    position: relative;
-    border-bottom: 1px solid #e0e0e0;
-    font-size: 16px;
-  }
-  .LandingPage__features___3O4kS {
-    display: flex;
-    flex-basis: auto;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    min-width: 300px;
-    background-color: #fff;
-    padding: 2% 4%;
-  }
-  .LandingPage__features___3O4kS .LandingPage__feature___1ExkC {
-    display: flex;
-    flex: 1;
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
-    vertical-align: flex-start;
-    padding: 2%;
-    width: 100%;
-  }
-  .LandingPage__faq-wrapper___1e15J {
-    font-size: 10px;
-    text-align: center;
-    padding: 0 20em;
-    background-color: #fff;
-  }
-  .LandingPage__div-heading___ERC4_ {
-    display: inline-block;
-    font-size: 30px;
-    color: #9e9e9e;
-    margin: 70px 10px;
-  }
-  .rapper___30wzp {
-    padding-bottom: 5em;
-  }
-  .FAQ__wrapper___5yZTI {
-    width: 100%;
-    font-size: 12px;
-  }
-  .FAQ__answer-div___7ZjVH {
-    padding: 10px 0 20px;
-    font-size: 18px;
-  }
-  .LandingPage__join_us_wrapper___2DKaM {
-    display: flex;
-    font-size: 10px;
-    padding: 6em 20em;
-    background-color: #fbfafa;
-  }
-  .rapper___2DKaM .LandingPage__image___1aIIW {
-    flex: 1;
-    text-align: center;
-  }
-  .LandingPage__join_us_wrapper___2DKaM .LandingPage__text___1rYkw {
-    flex: 1;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0%;
-  }
-  .LandingPage__join_us_wrapper___2DKaM .LandingPage__text___1rYkw .LandingPage__heading___2FXrb {
-    font-size: 26px;
-  }
-  .LandingPage__join_us_wrapper___2DKaM .LandingPage__text___1rYkw .LandingPage__desc___uA8nC {
-    color: #9e9e9e;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 10px 0 20px;
-    width: 60%;
-  }
-  .LandingPage__join_us_wrapper___2DKaM {
-    display: flex;
-    font-size: 10px;
-    padding: 6em 20em;
-    background-color: #fbfafa;
-  }
+.LandingPage__wrapper___2mxOA {
+  position: relative;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 16px;
+}
 
-  .l1SemiBold {
-    font-size: 2.14286rem;
-    font-weight: 600;
-    line-height: 1.5;
-  }
-  .l3Regular {
-    font-size: 1.42857rem;
-    font-weight: 400;
-    line-height: 1.5;
-  }
-  .textSecondary {
-    color: #767676;
-  }
-  
-  .PageTitleLanding__flexGap___IOaZ3 {
-    grid-gap: 24px;
-    gap: 24px;
-  }
-  
+.LandingPage__features___3O4kS {
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 2% 4%;
+}
+
+.LandingPage__features___3O4kS .LandingPage__feature___1ExkC {
+  display: flex;
+  flex: 1;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: flex-start;
+  padding: 2%;
+  width: 100%;
+}
+
+.LandingPage__faq-wrapper___1e15J {
+  font-size: 10px;
+  text-align: center;
+  padding: 0 20em;
+  background-color: #fff;
+}
+
+.LandingPage__div-heading___ERC4_ {
+  display: inline-block;
+  font-size: 30px;
+  color: #9e9e9e;
+  margin: 70px 10px;
+}
+
+.rapper___30wzp {
+  padding-bottom: 5em;
+}
+
+.FAQ__wrapper___5yZTI {
+  width: 100%;
+  font-size: 12px;
+}
+
+.FAQ__answer-div___7ZjVH {
+  padding: 10px 0 20px;
+  font-size: 18px;
+}
+
+.LandingPage__join_us_wrapper___2DKaM {
+  display: flex;
+  font-size: 10px;
+  padding: 6em 20em;
+  background-color: #fbfafa;
+}
+
+.rapper___2DKaM .LandingPage__image___1aIIW {
+  flex: 1;
+  text-align: center;
+}
+
+.LandingPage__feature___1ExkC .LandingPage__image___1aIIW {
+  height: 100px;
+}
+
+.LandingPage__join_us_wrapper___2DKaM .LandingPage__text___1rYkw {
+  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+.LandingPage__join_us_wrapper___2DKaM .LandingPage__text___1rYkw .LandingPage__heading___2FXrb {
+  font-size: 26px;
+}
+
+.LandingPage__join_us_wrapper___2DKaM .LandingPage__text___1rYkw .LandingPage__desc___uA8nC {
+  color: #9e9e9e;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 0 20px;
+  width: 60%;
+}
+
+.LandingPage__join_us_wrapper___2DKaM {
+  display: flex;
+  font-size: 10px;
+  padding: 6em 20em;
+  background-color: #fbfafa;
+}
+
+.l1SemiBold {
+  font-size: 2.14286rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.l3Regular {
+  font-size: 1.42857rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.textSecondary {
+  color: #767676;
+}
+
+.PageTitleLanding__flexGap___IOaZ3 {
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.style__top_bar___5ZPPN {
+  background-color: #fff;
+  box-shadow: 2px 0 4px 0 rgba(0, 0, 0, .12);
+}
+
+.style__flex_box____V1Y1 {
+  display: flex;
+}
+
+.style__stats_num___3Ns_4 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.style__stats_text___DUvDf {
+  font-size: 16px;
+}
+
+.style__border_btm___1wdot {
+  height: 1px;
+  border: 1px solid #eaeaea;
+  z-index: 9999;
+  width: 90%;
+  margin: 24px auto;
+  left: 5%;
+}
+
+.style__input-box___7akGm {
+  border-radius: 2px;
+  border: none;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.style__cap-wrap___38IWm {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  display: inline;
+  border: none;
+}
+
+.style__stats_bar___w397H {
+  color: #000;
+  display: flex;
+  justify-content: space-evenly;
+}
+.style__down_bar___3FV6g {
+  padding-bottom: 24px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.style__top_head___2h8g{
+  font-size: 24px;
+  padding: 24px 0;
+  margin: 0;
+}
+.style__free_text___3jZ7n {
+  margin-right: 36px;
+}
+.style__f20___2opYM {
+  font-size: 20px;
+}
+.style__next_button___3J4Nx {
+  border-radius: 4px;
+  background-color: #ff6f61;
+  width: 112px;
+  height: 40px;
+  margin-left: 8px;
+  border: none;
+  vertical-align: middle;
+  color: #fff;
+}
+
+  .input_box_style{
+  font-family: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
