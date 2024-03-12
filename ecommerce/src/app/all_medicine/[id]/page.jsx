@@ -515,7 +515,7 @@ const Page = () => {
                     Delivering to:
                   </span>
                   <span className="text-sm text-slate-500 shadow-slate-200">
-                    110020, New Fortis{' '}
+                    110010, New Fortis{' '}
                   </span>{' '}
                   <span>
                     <button
