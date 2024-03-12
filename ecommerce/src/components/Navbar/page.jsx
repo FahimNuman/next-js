@@ -30,7 +30,7 @@ const Navbar = () => {
               <Link href="/product" className="font-base hover:text-blue-500">
                 <strong>Product</strong>
               </Link><span></span> 
-              <Link href="/medicine" className="font-base hover:text-blue-500">
+              <Link href="/care_plan" className="font-base hover:text-blue-500">
                 <strong>CARE PLANE</strong>
                 <button className="btn btn-xs bg-blue-500">SAVE MODE</button>
               </Link><span></span> 
