@@ -4,13 +4,16 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { scroller } from 'react-scroll'
 
-
 const Page = () => {
   const [activeLink, setActiveLink] = useState('reflecting')
 
+  const updateSummaryText = (text) => {
+    document.getElementById('dropdown-summary').textContent = text
+  }
+
   const handleSetActive = (to) => {
-    setActiveLink(to);
-  };
+    setActiveLink(to)
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,17 +33,27 @@ const Page = () => {
     <div>
       <section className="px-5 py-10 dark:bg-gray-800 dark:text-gray-100">
         <div className="container grid grid-cols-12 mx-auto gap-y-6 md:gap-10">
-          <div className="flex flex-col justify-between col-span-12 py-2 space-y-8 md:space-y-16 md:col-span-3 ">
-            <div className="drawer lg:drawer-open shadow-xl md:sticky">
+          <div className="flex flex-col justify-between col-span-12 py-2 space-y-8 md:space-y-16 md:col-span-3">
+            <div
+              className="drawer lg:drawer-open shadow-xl"
+              style={{
+                position: '-webkit-sticky',
+                position: 'sticky',
+                top: '0',
+              }}
+            >
               <input
                 id="my-drawer-2"
                 type="checkbox"
                 className="drawer-toggle"
               />
               <div className="drawer-content flex flex-col items-center justify-center md:sticky">
-                
+                {/* Content Here */}
               </div>
-              <div className="drawer-side ">
+              <div
+                className="drawer-side"
+                style={{ overflowY: 'auto', maxHeight: 'calc(100vh - 4rem)' }}
+              >
                 <label
                   htmlFor="my-drawer-2"
                   aria-label="close sidebar"
@@ -49,175 +62,175 @@ const Page = () => {
                 <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content divide-y divide-slate-200 text-clip overflow-hidden">
                   {/* Sidebar content here */}
                   <li className="hover:text-emerald-400">
-                  <Link
-                    className={`${
-                      activeLink === 'reflectizsng'
-                        ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
-                        : ''
-                    }`}
-                    href="#reflecting"
-                    spy={true}
-                    smooth={true}
-                    offset={-5}
-                    duration={500}
-                    onSetActive={handleSetActive}
-                  >
-                    <span>Uses and benefits </span>
-                  </Link>
-                </li>
-                <li className="hover:text-emerald-400">
-                  <Link
-                    className={`${
-                      activeLink === 'details'
-                        ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
-                        : ''
-                    }`}
-                    href="#details"
-                    spy={true}
-                    smooth={true}
-                    offset={-5}
-                    duration={500}
-                    onSetActive={handleSetActive}
-                  >
-                    <span>Side effects</span>
-                  </Link>
-                </li>
-                <li className="hover:text-emerald-400">
-                  <Link
-                    className={`${
-                      activeLink === 'howtouse'
-                        ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
-                        : ''
-                    }`}
-                    href="#howtouse"
-                    spy={true}
-                    smooth={true}
-                    offset={-5}
-                    duration={500}
-                    onSetActive={handleSetActive}
-                  >
-                    <span>How to use </span>
-                  </Link>
-                </li>
-                <li className="">
-                  <Link
-                    className={`${
-                      activeLink === 'howdrugworks'
-                        ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
-                        : ''
-                    }`}
-                    href="#howdrugworks"
-                    spy={true}
-                    smooth={true}
-                    offset={-5}
-                    duration={500}
-                    onSetActive={handleSetActive}
-                  >
-                    <span>How drug works</span>
-                  </Link>
-                </li>
-                <li className="">
-                  <Link
-                    className={`${
-                      activeLink === 'safetyadvice'
-                        ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
-                        : ''
-                    }`}
-                    href="#safetyadvice"
-                    spy={true}
-                    smooth={true}
-                    offset={-5}
-                    duration={500}
-                    onSetActive={handleSetActive}
-                  >
-                    <span>Safety advice</span>
-                  </Link>
-                </li>
-                <li className="">
-                  <Link
-                    className={`${
-                      activeLink === 'allsubstitutes'
-                        ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
-                        : ''
-                    }`}
-                    href="#allsubstitutes"
-                    spy={true}
-                    smooth={true}
-                    offset={-5}
-                    duration={500}
-                    onSetActive={handleSetActive}
-                  >
-                    <span>Allsubstitutes</span>
-                  </Link>
-                </li>
-                <li className="">
-                  <Link
-                    className={`${
-                      activeLink === 'quicktips'
-                        ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
-                        : ''
-                    }`}
-                    href="#quicktips"
-                    spy={true}
-                    smooth={true}
-                    offset={-5}
-                    duration={500}
-                    onSetActive={handleSetActive}
-                  >
-                    <span>Quick tips </span>
-                  </Link>
-                </li>
-                <li className="">
-                  <Link
-                    className={`${
-                      activeLink === 'factbox'
-                        ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
-                        : ''
-                    }`}
-                    href="#factbox"
-                    spy={true}
-                    smooth={true}
-                    offset={-5}
-                    duration={500}
-                    onSetActive={handleSetActive}
-                  >
-                    <span>Fact box</span>
-                  </Link>
-                </li>
-                <li className="">
-                  <Link
-                    className={`${
-                      activeLink === 'concerns'
-                        ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
-                        : ''
-                    }`}
-                    href="#concerns"
-                    spy={true}
-                    smooth={true}
-                    offset={-5}
-                    duration={500}
-                    onSetActive={handleSetActive}
-                  >
-                    <span>Patient concerns</span>
-                  </Link>
-                </li>
-                <li className="">
-                  <Link
-                    className={`${
-                      activeLink === 'feedback'
-                        ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
-                        : ''
-                    }`}
-                    href="#feedback"
-                    spy={true}
-                    smooth={true}
-                    offset={-5}
-                    duration={500}
-                    onSetActive={handleSetActive}
-                  >
-                    <span>User feedback </span>
-                  </Link>
-                </li>
+                    <Link
+                      className={`${
+                        activeLink === 'reflectizsng'
+                          ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
+                          : ''
+                      }`}
+                      href="#reflecting"
+                      spy={true}
+                      smooth={true}
+                      offset={-5}
+                      duration={500}
+                      onSetActive={handleSetActive}
+                    >
+                      <span>Uses and benefits </span>
+                    </Link>
+                  </li>
+                  <li className="hover:text-emerald-400">
+                    <Link
+                      className={`${
+                        activeLink === 'details'
+                          ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
+                          : ''
+                      }`}
+                      href="#details"
+                      spy={true}
+                      smooth={true}
+                      offset={-5}
+                      duration={500}
+                      onSetActive={handleSetActive}
+                    >
+                      <span>Side effects</span>
+                    </Link>
+                  </li>
+                  <li className="hover:text-emerald-400">
+                    <Link
+                      className={`${
+                        activeLink === 'howtouse'
+                          ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
+                          : ''
+                      }`}
+                      href="#howtouse"
+                      spy={true}
+                      smooth={true}
+                      offset={-5}
+                      duration={500}
+                      onSetActive={handleSetActive}
+                    >
+                      <span>How to use </span>
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      className={`${
+                        activeLink === 'howdrugworks'
+                          ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
+                          : ''
+                      }`}
+                      href="#howdrugworks"
+                      spy={true}
+                      smooth={true}
+                      offset={-5}
+                      duration={500}
+                      onSetActive={handleSetActive}
+                    >
+                      <span>How drug works</span>
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      className={`${
+                        activeLink === 'safetyadvice'
+                          ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
+                          : ''
+                      }`}
+                      href="#safetyadvice"
+                      spy={true}
+                      smooth={true}
+                      offset={-5}
+                      duration={500}
+                      onSetActive={handleSetActive}
+                    >
+                      <span>Safety advice</span>
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      className={`${
+                        activeLink === 'allsubstitutes'
+                          ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
+                          : ''
+                      }`}
+                      href="#allsubstitutes"
+                      spy={true}
+                      smooth={true}
+                      offset={-5}
+                      duration={500}
+                      onSetActive={handleSetActive}
+                    >
+                      <span>Allsubstitutes</span>
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      className={`${
+                        activeLink === 'quicktips'
+                          ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
+                          : ''
+                      }`}
+                      href="#quicktips"
+                      spy={true}
+                      smooth={true}
+                      offset={-5}
+                      duration={500}
+                      onSetActive={handleSetActive}
+                    >
+                      <span>Quick tips </span>
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      className={`${
+                        activeLink === 'factbox'
+                          ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
+                          : ''
+                      }`}
+                      href="#factbox"
+                      spy={true}
+                      smooth={true}
+                      offset={-5}
+                      duration={500}
+                      onSetActive={handleSetActive}
+                    >
+                      <span>Fact box</span>
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      className={`${
+                        activeLink === 'concerns'
+                          ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
+                          : ''
+                      }`}
+                      href="#concerns"
+                      spy={true}
+                      smooth={true}
+                      offset={-5}
+                      duration={500}
+                      onSetActive={handleSetActive}
+                    >
+                      <span>Patient concerns</span>
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link
+                      className={`${
+                        activeLink === 'feedback'
+                          ? 'bg-[#fc1c26] text-white border-l-[2px] border-[#2544b8]'
+                          : ''
+                      }`}
+                      href="#feedback"
+                      spy={true}
+                      smooth={true}
+                      offset={-5}
+                      duration={500}
+                      onSetActive={handleSetActive}
+                    >
+                      <span>User feedback </span>
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -251,17 +264,11 @@ const Page = () => {
                   </div>
                 </header>
                 <p className="font-bold text-sm">MARKETER</p>
-                <a
-                  href="www.google.com"
-                  className="text-xs underline"
-                >
+                <a href="www.google.com" className="text-xs underline">
                   Abbott
                 </a>
                 <p className="font-bold text-sm">SALT COMPOSITION</p>
-                <a
-                  href="www.google.com"
-                  className="text-xs underline"
-                >
+                <a href="www.google.com" className="text-xs underline">
                   Amoxycillin (500mg) + Clavulanic Acid (125mg)
                 </a>
                 <p className="font-bold text-sm">STORAGE</p>
@@ -417,24 +424,70 @@ const Page = () => {
               </article>
             </div>
           </div>
-          
+
           <div className="hidden py-2 xl:col-span-3 lg:col-span-4 md:hidden lg:block">
             <>
-              <div className="overflow-hidden rounded bg-white text-slate-500 shadow-md shadow-slate-200 ">
+              <div className="overflow-hidden rounded-lg bg-white text-slate-500 shadow-md shadow-slate-200 ">
+                <div className="bg-teal-100 sm:p-3 text-sm flex items-center">
+                  <img
+                    src="/allmedicinproductdetails/shape.png"
+                    alt=""
+                    className="mr-1"
+                  />
+                  <span className="text-sm">
+                    5,967 people viewed this recently
+                  </span>
+                </div>
+
                 <div className="p-6 ">
-                <div className="overflow-hidden bg-white rounded shadow-md text-slate-500 shadow-slate-200">
-        <div className="p-6">5,967 people viewed this recently</div>
-      </div>
                   <header className="mb-4 ">
-                    <h3 className="text-xl font-medium text-slate-700">
-                      Greek breakfast
+                    <p className="text-sm">
+                      {' '}
+                      MRP{' '}
+                      <span className=" line-through dark:text-gray-600">
+                        27768
+                      </span>{' '}
+                    </p>
+                    <h3 className="text-xl font-medium font-bold text-black flex items-center">
+                      টা 1000
                     </h3>
-                    <p className=" text-slate-400"> $8.99</p>
                   </header>
-                  <p>
-                    Blueberry Superpower: Vanilla Greek Yogurt + Fresh
-                    Blueberries + Granola + Honey.
-                  </p>
+                  <p>Inclusive of all taxes</p>
+                  <details id="dropdown" className="dropdown grid-rows-2 ">
+                    <summary
+                      id="dropdown-summary"
+                      className="m-1 border rounded "
+                    >
+                      0 Vial
+                    </summary>
+                    <p className="bg-teal-100">1.0 Injection in 1 vial</p>
+                    <ul className="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded w-32">
+                      <li>
+                        <a
+                          onClick={() => updateSummaryText('Item 1')}
+                          className="text-xs px-2 py-1"
+                        >
+                          1 vial
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          onClick={() => updateSummaryText('Item 2')}
+                          className="text-xs px-2 py-1"
+                        >
+                          2 vials
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          onClick={() => updateSummaryText('Item 3')}
+                          className="text-xs px-2 py-1"
+                        >
+                          3 vials
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
                 </div>
 
                 <div className="flex justify-end p-6 pt-0">
@@ -442,23 +495,109 @@ const Page = () => {
                     <span>Add to card</span>
                   </button>
                 </div>
+                <div className="flex justify-end p-6 pt-0 text-sm text-slate-500">
+                  Online payment only
+                </div>
+                <div className="flex justify-end p-6 pt-0 text-sm text-slate-500">
+                  Not returnable{' '}
+                  <span className="text-orange-400">Read policy</span>
+                </div>
               </div>
             </>
             <br></br>
             <>
-              <div className="overflow-hidden bg-white rounded shadow-md text-slate-500 shadow-slate-200 ">
-                <div className="p-6 text-xl font-medium">
-                  Earliest delivery by Tomorrow Delivering to: 110020, New Delhi
-                  Down Arrow Icon
+              <div className="overflow-hidden bg-white rounded-lg shadow-md text-slate-500 shadow-slate-200 ">
+                <div className="p-6 text-xl  font-bold text-slate-600 ">
+                  Earliest delivery by{' '}
+                  <span className="text-green-400">Tomorrow</span>
+                  <span className="text-sm font-bold text-black">
+                    {' '}
+                    Delivering to:
+                  </span>
+                  <span className="text-sm text-slate-500 shadow-slate-200">
+                    110010, New Fortis{' '}
+                  </span>{' '}
+                  <span>
+                    <button
+                      className=""
+                      onClick={() =>
+                        document.getElementById('my_modal_3').showModal()
+                      }
+                    >
+                      {' '}
+                      <img
+                        alt="Down Arrow Icon"
+                        src="https://onemg.gumlet.io/jj74lyp3teqhlxoo1qkz.svg"
+                      />
+                    </button>
+                  </span>
                 </div>
+                <dialog id="my_modal_3" className="modal">
+                  <div className="modal-box">
+                    <form method="dialog">
+                      {/* Close button */}
+                      <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                        ✕
+                      </button>
+                    </form>
+
+                    <h3 className="font-bold text-lg">
+                      Choose delivery location
+                    </h3>
+
+                    <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
+                      <div className="flex justify-between p-4">
+                        <div className="flex space-x-4">
+                          {/* Input field and button */}
+                          <div className="col-span-full sm:col-span-3 flex items-center">
+                            <input
+                              id="firstname"
+                              type="text"
+                              placeholder="Enter Pincode"
+                              className="w-full rounded-md border border-slate-300 focus:ring focus:ring-opacity-75 focus:dark:ring-violet-400 dark:border-gray-700 dark:text-gray-900 bg-white px-4 py-2 mr-2"
+                            />
+                            <button className="bg-green-400 text-white px-3 py-2 rounded-md focus:outline-none">
+                              CHECK
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex items-center">
+                        <img
+                          src="/allmedicinproductdetails/a8qedeetavlucpi0c9tv.webp"
+                          alt=""
+                          className="h-6 w-6 mr-1"
+                        />
+                        <span className="font-bold text-xs">
+                          Use my current location
+                        </span>
+                      </div>
+
+                      <div className="p-4 space-y-2 text-sm dark:text-gray-400">
+                        <p>
+                         <img src="/allmedicinproductdetails/v1hnwuh4ofamf5t9gr7m.webp" alt="" />
+                        </p>
+                        <p className='text-center text-black text-xl font-bold'>
+                        Sign in to view saved addresses
+                        </p>
+                        <p className='text-sm'>Saved addresses provide a more accurate estimate of this product’s arrival </p>
+                        <button className="btn btn-outline btn-success text-green-300 btn-wide btn-sm px-2 items-center">Sign In</button>
+
+                      
+                      </div>
+                    </div>
+                  </div>
+                </dialog>
               </div>
             </>
             <br></br>
             <>
               <div className="overflow-hidden bg-white rounded shadow-md text-slate-500 shadow-slate-200 border-dashed border-2 border-indigo-600">
                 <div className="p-6">
-                 <span className="text-xl font-medium">Earliest delivery by</span>  Tomorrow Delivering to: 110020, New Delhi
-                  Down Arrow Icon
+                  <span className="text-xl font-medium">
+                    Earliest delivery by
+                  </span>{' '}
+                  Tomorrow Delivering to: 110020, New Delhi Down Arrow Icon
                 </div>
               </div>
             </>
