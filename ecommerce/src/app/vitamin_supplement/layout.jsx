@@ -37,17 +37,18 @@ const SidebarMenu = ({ title, items }) => {
         />
       </div>
       {isOpen && (
-        <div className="collapse-content overflow-auto">
-          <ul className="list-none text-sm font-light ">
-            {filteredItems.map((item, index) => (
-              <li key={index}>
-                <input type="checkbox" id={`${title}-${index}`} />
-                <label htmlFor={`${title}-${index}`}>{item.label}</label>
-                <Link href={item.link}>{item.label}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <div className="collapse-content" style={{ maxHeight: '200px', overflowY: 'auto', position: 'sticky', top: '0' }}>
+        <ul className="list-none text-sm font-light">
+          {filteredItems.map((item, index) => (
+            <li key={index}>
+              <input type="checkbox" id={`${title}-${index}`} />
+              <label htmlFor={`${title}-${index}`}>{item.label}</label>
+              <Link href={item.link}>{item.label}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      
       )}
     </div>
   )
@@ -58,11 +59,16 @@ const VitaminSupplementlayout = ({ children }) => {
     {
       title: 'BRANDS',
       items: [
-        { label: 'Multivitamins', link: '/vitamin_supplement_classes/1' },
+        { label: 'Multivitamins', link: '/vitamin_supplement/1' },
         { label: 'Vitamin D3', link: '/vitamin_supplement/2' },
-        { label: 'Vitamin D3', link: '/vitamin_supplement_classes/3' },
-        { label: 'Vitamin D3', link: '/vitamin_supplement_classes/4' },
-        { label: 'Vitamin D3', link: '/vitamin_supplement_classes/5' },
+        { label: 'Vitamin D4', link: '/vitamin_supplement/3' },
+        { label: 'Vitamin D5', link: '/vitamin_supplement/4' },
+        { label: 'Vitamin D6', link: '/vitamin_supplement/5' },
+        { label: 'Vitamin B2', link: '/vitamin_supplement/6' },
+        { label: 'Vitamin C7', link: '/vitamin_supplement/7' },
+        { label: 'Cerelac', link: '/vitamin_supplement/8' },
+        { label: 'Vitamin D6', link: '/vitamin_supplement/9' },
+        { label: 'Vitamin D6', link: '/vitamin_supplement/10' },
       ],
     },
     {
@@ -114,7 +120,8 @@ const VitaminSupplementlayout = ({ children }) => {
             <Slider />
           </div>
           <div className="w-3/1  h-24 ">
-            <section className="py-6 dark:bg-gray-800 dark:text-gray-100">
+         {/** 
+          *  <section className="py-6 dark:bg-gray-800 dark:text-gray-100">
               <div className="container p-4 mx-auto space-y-16 sm:p-10">
                 <div className="space-y-4">
                   
@@ -243,14 +250,14 @@ const VitaminSupplementlayout = ({ children }) => {
                   </div>
                 </div>
               </div>
-            </section>
+            </section>**/}  
           </div>
           {/* Pagination */}
           <ul className="pagination">
             {Array.from(
               { length: Math.ceil(vitaminData.length / itemsPerPage) },
               (_, i) => (
-                <li key={i} className="page-item">
+                <li key={i} className="page-item place-items-center">
                   <button onClick={() => paginate(i + 1)} className="page-link">
                     {i + 1}
                   </button>

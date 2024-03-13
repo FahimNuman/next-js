@@ -42,3 +42,7 @@ yarn.lock
 .netlify/
 netlify.toml
 
+#ignore pnp
+.pnp.cjs
+.pnp.loader.mjs
+.yarn/unplugged/

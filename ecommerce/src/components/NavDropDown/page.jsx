@@ -52,12 +52,15 @@ const NavDropDown = () => {
   }
 
   return (
-    <div className="navbar bg-base-100 z-100"  style={{ zIndex: 9999 }}>
+    <div className="navbar bg-base-100 z-100" style={{ zIndex: 9999 }}>
       <nav className="flex justify-center">
-        <ul className="flex flex-wrap items-center font-medium text-sm">
-          <li className="p-4 lg:px-8">
-            
-          </li>
+        <ul className="flex flex-wrap items-center font-medium text-sm ">
+          <li
+            className="p-4 lg:px-8 relative flex items-center space-x-1"
+            onMouseEnter={handleHealthMouseEnter}
+            onMouseLeave={handleHealthMouseLeave}
+            style={{ zIndex: 9999 }}
+          ></li>
 
           <li
             className="p-4 lg:px-8 relative flex items-center space-x-1"
@@ -90,12 +93,18 @@ const NavDropDown = () => {
 
             {isHealthMenuOpen && (
               <ul
-              className="text-xs origin-top-right absolute top-full left-1/2 -translate-x-1/2  max-h-[640px] min-w-[640px] bg-white border border-slate-200 p-2 hover:text-orange-300 rounded-lg shadow-xl grid grid-cols-4 gap-2"
-              style={{ zIndex: 9999 }}
+                className="text-xs origin-top-right absolute top-full left-1/2 -translate-x-1/2  max-h-[640px] min-w-[640px] bg-white border border-slate-200 p-2 hover:text-orange-300 rounded-lg shadow-xl grid grid-cols-4 gap-2"
+                style={{ zIndex: 9999 }}
               >
                 <li>
                   <Link
-                    className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
+                    className=" text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href=""
+                  ></Link>
+                </li>
+                <li>
+                  <Link
+                    className=" text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
                     href="/all_diseases"
                   >
                     All Diseases
@@ -114,10 +123,9 @@ const NavDropDown = () => {
                     className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
                     href="/drug_therapeutic_classes"
                   >
-                   Medicines by Therapeutic Class
+                    Medicines by Therapeutic Class
                   </Link>
                 </li>{' '}
-
               </ul>
             )}
           </li>
@@ -153,15 +161,15 @@ const NavDropDown = () => {
 
             {isPersonalMenuOpen && (
               <ul
-              className="text-xs origin-top-right absolute top-full left-1/2 -translate-x-1/2  max-h-[640px] min-w-[640px] bg-white border border-slate-200 p-2 hover:text-orange-300 rounded-lg shadow-xl grid grid-cols-4 gap-4"
-              style={{ zIndex: 9999 }}
+                className="text-xs origin-top-right absolute top-full left-1/2 -translate-x-1/2  max-h-[640px] min-w-[640px] bg-white border border-slate-200 p-2 hover:text-orange-300 rounded-lg shadow-xl grid grid-cols-4 gap-4"
+                style={{ zIndex: 9999 }}
               >
                 <li>
-                <Link
+                  <Link
                     className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
                     href="/vitamin_supplement"
                   >
-                   Vitamin & Supplements
+                    Vitamin & Supplements
                   </Link>
                 </li>
                 <li>
@@ -169,10 +177,9 @@ const NavDropDown = () => {
                     className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
                     href="/vitamin_supplement"
                   >
-                   Vitamin & Supplements
+                    Vitamin & Supplements
                   </Link>
                 </li>{' '}
-
                 <li>
                   <a
                     className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
@@ -359,179 +366,179 @@ const NavDropDown = () => {
             </button>
 
             {isDiabetesMenuOpen && (
-            <ul
-            className="text-xs origin-top-right absolute top-full left-1/2 -translate-x-1/2  max-h-[640px] min-w-[640px] bg-white border border-slate-200 p-2 hover:text-orange-300 rounded-lg shadow-xl grid grid-cols-4 gap-4"
-            style={{ zIndex: 9999 }}
-            >
-              <li>
-                <a
-                  className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
-                  href="#"
-                >
-                  Priority Ratings
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Priority Ratings
-                </a>
-              </li>{' '}
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Priority Ratings
-                </a>
-              </li>{' '}
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Priority Ratings
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Insights
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Item Mirror
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Support Center
-                </a>
-              </li>
-              <li>
-                <a
-                  className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
-                  href="#"
-                >
-                  Priority Ratings
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Priority Ratings
-                </a>
-              </li>{' '}
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Priority Ratings
-                </a>
-              </li>{' '}
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Priority Ratings
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Insights
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Item Mirror
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Support Center
-                </a>
-              </li>
-              <li>
-                <a
-                  className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
-                  href="#"
-                >
-                  Priority Ratings
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Priority Ratings
-                </a>
-              </li>{' '}
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Priority Ratings
-                </a>
-              </li>{' '}
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Priority Ratings
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Insights
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Item Mirror
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                  href="#"
-                >
-                  Support Center
-                </a>
-              </li>
-            </ul>
+              <ul
+                className="text-xs origin-top-right absolute top-full left-1/2 -translate-x-1/2  max-h-[640px] min-w-[640px] bg-white border border-slate-200 p-2 hover:text-orange-300 rounded-lg shadow-xl grid grid-cols-4 gap-4"
+                style={{ zIndex: 9999 }}
+              >
+                <li>
+                  <a
+                    className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>{' '}
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>{' '}
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Insights
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Item Mirror
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Support Center
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>{' '}
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>{' '}
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Insights
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Item Mirror
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Support Center
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>{' '}
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>{' '}
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Insights
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Item Mirror
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Support Center
+                  </a>
+                </li>
+              </ul>
             )}
           </li>
 
@@ -567,179 +574,179 @@ const NavDropDown = () => {
             </button>
 
             {isHealthConditionsMenuOpen && (
-             <ul
-             className="text-xs origin-top-right absolute top-full left-1/2 -translate-x-1/2  max-h-[640px] min-w-[640px] bg-white border border-slate-200 p-2 hover:text-orange-300 rounded-lg shadow-xl grid grid-cols-4 gap-4"
-             style={{ zIndex: 9999 }}
-             >
-               <li>
-                 <a
-                   className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
-                   href="#"
-                 >
-                   Priority Ratings
-                 </a>
-               </li>
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Priority Ratings
-                 </a>
-               </li>{' '}
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Priority Ratings
-                 </a>
-               </li>{' '}
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Priority Ratings
-                 </a>
-               </li>
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Insights
-                 </a>
-               </li>
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Item Mirror
-                 </a>
-               </li>
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Support Center
-                 </a>
-               </li>
-               <li>
-                 <a
-                   className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
-                   href="#"
-                 >
-                   Priority Ratings
-                 </a>
-               </li>
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Priority Ratings
-                 </a>
-               </li>{' '}
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Priority Ratings
-                 </a>
-               </li>{' '}
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Priority Ratings
-                 </a>
-               </li>
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Insights
-                 </a>
-               </li>
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Item Mirror
-                 </a>
-               </li>
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Support Center
-                 </a>
-               </li>
-               <li>
-                 <a
-                   className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
-                   href="#"
-                 >
-                   Priority Ratings
-                 </a>
-               </li>
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Priority Ratings
-                 </a>
-               </li>{' '}
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Priority Ratings
-                 </a>
-               </li>{' '}
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Priority Ratings
-                 </a>
-               </li>
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Insights
-                 </a>
-               </li>
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Item Mirror
-                 </a>
-               </li>
-               <li>
-                 <a
-                   className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                   href="#"
-                 >
-                   Support Center
-                 </a>
-               </li>
-             </ul>
+              <ul
+                className="text-xs origin-top-right absolute top-full left-1/2 -translate-x-1/2  max-h-[640px] min-w-[640px] bg-white border border-slate-200 p-2 hover:text-orange-300 rounded-lg shadow-xl grid grid-cols-4 gap-4"
+                style={{ zIndex: 9999 }}
+              >
+                <li>
+                  <a
+                    className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>{' '}
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>{' '}
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Insights
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Item Mirror
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Support Center
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>{' '}
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>{' '}
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Insights
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Item Mirror
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Support Center
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className=" divide-y sm:flex-row sm:divide-y-0 text-slate-400 text-sm-md hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 "
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>{' '}
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>{' '}
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Priority Ratings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Insights
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Item Mirror
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
+                    href="#"
+                  >
+                    Support Center
+                  </a>
+                </li>
+              </ul>
             )}
           </li>
 
@@ -776,8 +783,8 @@ const NavDropDown = () => {
 
             {isAnotherHealthMenuOpen && (
               <ul
-              className="text-xs origin-top-right absolute top-full left-1/2 -translate-x-1/2  max-h-[640px] min-w-[640px] bg-white border border-slate-200 p-2 hover:text-orange-300 rounded-lg shadow-xl grid grid-cols-4 gap-4"
-              style={{ zIndex: 9999 }}
+                className="text-xs origin-top-right absolute top-full left-1/2 -translate-x-1/2  max-h-[640px] min-w-[640px] bg-white border border-slate-200 p-2 hover:text-orange-300 rounded-lg shadow-xl grid grid-cols-4 gap-4"
+                style={{ zIndex: 9999 }}
               >
                 <li>
                   <a
@@ -899,7 +906,6 @@ const NavDropDown = () => {
                     Priority Ratings
                   </a>
                 </li>
-              
               </ul>
             )}
           </li>

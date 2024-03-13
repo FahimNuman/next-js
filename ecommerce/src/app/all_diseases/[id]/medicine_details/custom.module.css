@@ -1,0 +1,150 @@
+.GenericSaltStyle__breadCrumbContainer___240Oj {
+    color: #ff6f61;
+    padding-top: 1rem;
+    padding-bottom: 1em;
+  }
+  .Breadcrumbs__sku_name___1xOp8 {
+    color: #9e9e9e;
+    text-transform: capitalize;
+  }
+  .style__generic_header___3DTBP {
+    padding-bottom: 0.7rem;
+    font-size: 16px;
+    color: #2d2d31;
+    border-bottom: 1px solid #ececec;
+  }
+  
+  .style__border_bottom___2ZMDB {
+    border-bottom: 1px solid #ececec;
+  }
+  .style__generic_authorCard___3cYOB {
+    padding: 0.7rem 0;
+  }
+  .style__author-card___2no4w, .style__generic_authorCard___3cYOB {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .style__profile_photo___3bH9p {
+    max-width: 48px;
+    border-radius: 50%;
+  }
+  
+  .style__image___Ny_Sa.style__loaded___22epL {
+    opacity: 1;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+  }
+  
+  .style__image___Ny_Sa {
+    opacity: 0;
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+  }
+  .style__image___Ny_Sa.style__loaded___22epL {
+    opacity: 1;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+  }
+  .style__author_details___z7wXf {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.6rem;
+    flex: 1;
+  }
+  .style__author_role___3vXTa {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .6);
+  }
+  .style__author_name___1gJ_u {
+    font-size: 14px;
+    font-weight: 700;
+    color: #212121;
+  }
+  
+  .style__author_name___1gJ_u a{
+    color: #ff6f61;
+  }
+  s.tyle__qualification___3CFZx {
+    font-size: 12px;
+    color: #212121;
+  }
+  
+  .style__author-name___1gJ-u a {
+    color: #ff6f61;
+  }
+  .style__qualification___3CFZx {
+    font-size: 12px;
+    color: #212121;
+  }
+  
+  .style__generic_lastUpdate___3N3ws {
+    padding: 0.7rem 0;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .8);
+  }
+  
+  .style__generic_editorialWrapper___3pdig {
+    padding: 0.4rem 0;
+  }
+  
+  .style__editorial-container___27rvi {
+    display: flex;
+  }
+  
+  .style__imagecontainer___2MBY_ {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    max-width: 75px;
+  }
+  
+  .style__image___Ny_Sa.style__loaded___22epL {
+    opacity: 1;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+  }
+  
+  .style__content___2U9Z1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    padding: 0.6rem;
+    color: #212121;
+  }
+  
+  .style__content___2U9Z1 h3.style__editorialText___5PN4L {
+    font-size: 12px;
+  }
+  
+  a.style__link___2veYP {
+    font-weight: 700;
+    color: #ff6f61;
+  }
+  
+  .GenericSaltStyle__section_title___UDYHG {
+    color: #042430;
+    border-bottom: 1px solid #acacac;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+  }
+  .GenericSaltStyle__repeatBox___3NhJ2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+  }
+  
+  .GenericSaltStyle__borderBottom___2P_Lp {
+    border-bottom: 1px solid #acacac;
+  }
+  .GenericSaltStyle__brandColor___1Papj a:not(.button-text) {
+    color: #ff6f61 !important;
+  }
+  
+
+  /* li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+  } */

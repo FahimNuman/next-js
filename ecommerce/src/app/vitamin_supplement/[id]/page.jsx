@@ -29,7 +29,7 @@ export default async function therapeuticMedicine({params}) {
                   Human Insulatard 40IU/ml Suspension for Injection
                 </span>
                 <span>
-                  MRP : 100tk
+                  {index.id}
                 </span>
               </div>
               <small>

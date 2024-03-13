@@ -1,6 +1,7 @@
 import getAllDiseases from '@/lib/allDiseageData';
 import React from 'react'
 import ProductIndex from '../product_index/page';
+import Link from 'next/link';
 export default async function Posts() {
 const getDiseases = await getAllDiseases();
   return (
@@ -19,7 +20,7 @@ const getDiseases = await getAllDiseases();
               </figure>
             </div>
             <div className="card-body w-2/3">
-              <div className="card-title text-sm">{disease.title}</div>
+              <Link href="/all_diseases/id" className="card-title text-sm">{disease.title}</Link>
             </div>
           </div>
         )}
