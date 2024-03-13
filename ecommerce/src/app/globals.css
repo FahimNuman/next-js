@@ -35,11 +35,11 @@ body {
   }
 }
 
-li {
+/* li {
   display: list-item;
   text-align: -webkit-match-parent;
-}
-ul {
+} 
+ ul {
   font-weight: 400;
   display: block;
   list-style-type: disc;
@@ -48,7 +48,8 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
-}
-ul ul {
+} */
+
+/* ul ul {
   list-style-type: circle;
-}
+} */
