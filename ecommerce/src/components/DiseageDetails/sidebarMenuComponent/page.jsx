@@ -2,8 +2,6 @@ import React from 'react'
 
 const SidebarMenuComponent = (props) => {
   const { id } = props;
-
-
   return (
     <div className="mx-3">
       <div className="container-fluid widget-container bg-[#fff]">
@@ -372,9 +370,6 @@ const SidebarMenuComponent = (props) => {
           </div>
         </div>
       </div>
-
-
-
     </div>
   )
 }
