@@ -10,7 +10,7 @@ const RightSideComponents = () => {
     <div>
       <>
         <div className="overflow-hidden rounded-lg bg-white text-slate-500 shadow-md shadow-slate-200 ">
-          <div className="bg-teal-100 sm:p-3 text-sm flex items-center">
+          <div className="bg-orange-100 sm:p-3 text-sm flex items-center">
             <img
               src="/allmedicinproductdetails/shape.png"
               alt=""
@@ -68,7 +68,7 @@ const RightSideComponents = () => {
           </div>
 
           <div className="flex justify-end p-6 pt-0">
-            <button className="inline-flex h-10 w-full items-center justify-center gap-2 whitespace-nowrap rounded bg-emerald-500 px-5 text-sm font-medium tracking-wide text-white transition duration-300 hover:bg-emerald-600 focus:bg-emerald-700 focus-visible:outline-none disabled:cuTkor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+            <button className="inline-flex h-10 w-full items-center justify-center gap-2 whitespace-nowrap rounded bg-orange-500 px-5 text-sm font-medium tracking-wide text-white transition duration-300 hover:bg-orange-600 focus:bg-orange-700 focus-visible:outline-none disabled:cuTkor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
               <span>Add to card</span>
             </button>
           </div>
@@ -85,7 +85,7 @@ const RightSideComponents = () => {
         <div className="overflow-hidden bg-white rounded-lg shadow-md text-slate-500 shadow-slate-200 ">
           <div className="p-6 text-xl  font-bold text-slate-600 ">
             Earliest delivery by{' '}
-            <span className="text-green-400">Tomorrow</span>
+            <span className="text-orange-500">Tomorrow</span>
             <span className="text-sm font-bold text-black">
               {' '}
               Delivering to:
@@ -200,7 +200,7 @@ const RightSideComponents = () => {
                   />{' '}
                   <span className="font-bold">Airtel Payments Bank:</span> Pay
                   with Airtel Payments Bank and get 10% cashback up to টা200
-                  cashback on a minimum transaction of ₹1000. Valid only for
+                  cashback on a minimum transaction of টা1000. Valid only for
                   first-time users of Airtel Payments Bank wallet..
                 </p>
                 <p className="px-4 py-6 pt-0 ml-4 -mt-4 text-xs">
@@ -217,7 +217,12 @@ const RightSideComponents = () => {
           </div>
         </section>
       </>
-
+      <br />
+      <>
+      <div>
+        <img src="https://onemg.gumlet.io/3c72d972-e2e5-4b34-94ba-6300418395ad_1705995362.png?w=430&h=247&format=auto" alt="" />
+      </div>
+      </>
       <br></br>
 
       <>
@@ -285,6 +290,8 @@ const RightSideComponents = () => {
           </div>
         </div>
       </>
+
+     
     </div>
   )
 }

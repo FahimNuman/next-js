@@ -50,14 +50,14 @@ const Page = () => {
 
       {showBackToTop && (
         <button
-          className="fixed bottom-8 right-8 bg-green-400 text-white px-4 py-2 rounded-full shadow-md hover:bg-green-700 transition duration-300"
+          className="fixed bottom-8 right-8 bg-orange-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-orange-700 transition duration-300"
           onClick={scrollToTop}
         >
           <img
             alt=""
             src="/allmedicinproductdetails/upperarrow.png"
-            width="20"
-            height="20"
+            width="40"
+            height="21"
           />
         </button>
       )}
