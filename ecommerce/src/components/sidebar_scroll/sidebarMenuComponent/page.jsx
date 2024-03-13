@@ -1,4 +1,5 @@
 import React from 'react'
+import CarouselOne from '../carouselOne/page'
 
 const SidebarMenuComponent = () => {
   return (
@@ -215,7 +216,7 @@ const SidebarMenuComponent = () => {
             Although there are limited studies in humans, animal studies have
             shown harmful effects on the developing baby. Your doctor will weigh
             the benefits and any potential risks before prescribing it to you.
-            Please consult your doctor..
+            Please consult your doctor.
           </p>
 
           <div className="text-xs text-slate-500 flex items-center">
@@ -251,7 +252,7 @@ const SidebarMenuComponent = () => {
             Although there are limited studies in humans, animal studies have
             shown harmful effects on the developing baby. Your doctor will weigh
             the benefits and any potential risks before prescribing it to you.
-            Please consult your doctor. Please consult your doctor..
+            Please consult your doctor. Please consult your doctor.
           </p>
 
           <div className="text-xs text-slate-500 flex items-center">
@@ -292,59 +293,65 @@ const SidebarMenuComponent = () => {
         </div>
 
         <div
-          id="allsubstitutes"
-          className="border-b-2 p-6 dark:bg-gray-800 dark:text-gray-100 flex"
-        >
-          <div className="flex-1">
-            <h1 className="text-sm font-bold">QUICK TIPS</h1>
-            <div className="text-xs text-slate-500 items-center">
-              <div className="mb-2">
-                <li>
-                  Avastin 100mg Injection is an effective, first-line option
-                  when used together with other medicines for certain types of
-                  cancers such as colorectal, lung, cervical, and kidney
-                  cancers.
-                </li>
-              </div>
-              <div className="mb-2">
-                <li>
-                  Avastin 100mg Injection is given as an infusion. Your doctor
-                  or nurse will monitor you for signs of an infusion reaction
-                  such as high blood pressure and trouble breathing.
-                </li>
-              </div>
-              <div className="mb-2">
-                <li>
-                  It can lower your wound healing ability. Inform your doctor
-                  that you are taking this medication before undergoing any
-                  surgical procedure.
-                </li>
-              </div>
-              <div className="mb-2">
-                <li>
-                  It can increase the risk of bleeding. Inform your doctor if
-                  you notice any unusual bleeding or bleeding that doesn't stop
-                  easily.
-                </li>
-              </div>
-              <div>
-                <li>
-                  Your doctor may regularly check your blood pressure and levels
-                  of protein in your urine while you are on Avastin 100mg
-                  Injection.
-                </li>
-              </div>
-            </div>
-          </div>
+  id="allsubstitutes"
+  className="border-b-2 p-6 dark:bg-gray-800 dark:text-gray-100 flex"
+>
+  <div className="flex-1">
+    <h1 className="text-sm font-bold">QUICK TIPS</h1>
+    <div className="text-xs text-slate-500 items-center">
+      <div className="mb-2">
+        <li>
+          Avastin 100mg Injection is an effective, first-line option when used
+          together with other medicines for certain types of cancers such as
+          colorectal, lung, cervical, and kidney cancers.
+        </li>
+      </div>
+      <div className="mb-2">
+        <li>
+          Avastin 100mg Injection is given as an infusion. Your doctor or nurse
+          will monitor you for signs of an infusion reaction such as high blood
+          pressure and trouble breathing.
+        </li>
+      </div>
+      <div className="mb-2">
+        <li>
+          It can lower your wound healing ability. Inform your doctor that you
+          are taking this medication before undergoing any surgical procedure.
+        </li>
+      </div>
+      <div className="mb-2">
+        <li>
+          It can increase the risk of bleeding. Inform your doctor if you
+          notice any unusual bleeding or bleeding that doesn't stop easily.
+        </li>
+      </div>
+      <div>
+        <li>
+          Your doctor may regularly check your blood pressure and levels of
+          protein in your urine while you are on Avastin 100mg Injection.
+        </li>
+      </div>
+    </div>
+  </div>
 
-          <div className="flex-1 ml-4">
-            <video
-              src="https://youtu.be/O18jGPaeWEc?t=7"
-              controls
-              className="w-full h-auto"
-            />
-          </div>
+  <div className="flex-1 ml-4">
+    <video
+      src="https://youtu.be/5wyvUqpZw_c?si=eDyLdMu2ER35_AQJ"
+      controls
+      className="w-full h-auto"
+    />
+  </div>
+</div>
+
+        
+        <div
+          id="quicktips"
+          className="border-b-2 p-6 dark:bg-gray-800 dark:text-gray-100 text-slate-500 font-bold "
+        >
+          Patient concerns
+       <CarouselOne/>
         </div>
+        
       </div>
     </div>
   )
