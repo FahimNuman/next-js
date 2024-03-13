@@ -25,7 +25,7 @@ const Sidebar_scroll = () => {
     }
   }, [activeLink])
   return (
-    <div>
+    <div className="drawer-content flex flex-col items-center justify-center md:sticky">
       <div
         className="drawer lg:drawer-open shadow-xl"
         style={{
@@ -46,8 +46,8 @@ const Sidebar_scroll = () => {
             htmlFor="my-drawer-2"
             aria-label="close sidebar"
             className="drawer-overlay"
-          ></label>
-          <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content divide-y divide-slate-200 text-clip overflow-hidden">
+          >Over View  </label>
+          <ul className="menu p-4 w-80 min-h-full 0 text-base-content rounded-md divide-y divide-slate-200 text-clip overflow-hidden">
             {/* Sidebar content here */}
             <li className="hover:text-emerald-400">
               <Link
@@ -218,6 +218,141 @@ const Sidebar_scroll = () => {
               >
                 <span>User feedback </span>
               </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <br />
+
+      <div
+        className="drawer lg:drawer-open shadow-xl rounded-md"
+        style={{
+          position: '-webkit-sticky',
+          position: 'sticky',
+          top: '0',
+          height: '150px', // Adjust the height as needed
+        }}
+      >
+        <input id="my-drawer-2" className="drawer-toggle" />
+        <div
+          className="drawer-content flex flex-col items-center justify-center md:sticky"
+          style={{ height: '150px' }}
+        >
+          {' '}
+          {/* Adjust the height as needed */}
+          {/* Content Here */}
+        </div>
+        <div className="drawer-side">
+          <label></label>
+          <ul className="menu ">
+            {/* Sidebar content here */}
+            <li className="">
+              <p>
+                <img
+                  className="w-20 h-21 mr-1"
+                  src="https://onemg.gumlet.io/q_auto,f_auto/iw8eipowl2ubpml6moi3.png"
+                  alt=""
+                />
+                We Are <br /> LegitScript Certified <br />
+              </p>
+              <span className="text-orange-300">click to know more</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <br />
+
+      <div
+        className="drawer lg:drawer-open shadow-xl rounded-md"
+        style={{
+          position: '-webkit-sticky',
+          position: 'sticky',
+          top: '0',
+          overflow: 'hidden',
+        }}
+      >
+        <input id="my-drawer-2" className="drawer-toggle" />
+        <div className="drawer-content flex flex-col items-center justify-center md:sticky">
+          {/* Content Here */}
+        </div>
+        <div className="drawer-side">
+          <div className="text-xl">Author Details</div>
+          <label></label>
+          <ul className="menu ">
+            {/* Sidebar content here */}
+            <li className="border-b-2 p-6 dark:bg-gray-800 dark:text-gray-100">
+              <p>
+                {' '}
+                <img
+                  className="w-10 h-11 mr-1 rounded-full"
+                  src="https://onemg.gumlet.io/tr7ypdpgfzvv1rzbo43x.jpg"
+                  alt=""
+                />
+                Written By
+                <br />
+                Dr. Anuj Saini <br />
+                <br />
+                -MMST, MBBS
+              </p>
+            </li>
+
+            <li className="border-b-2 p-6 dark:bg-gray-800 dark:text-gray-100">
+              <p>
+                {' '}
+                <img
+                  className="w-10 h-11 mr-1 rounded-full"
+                  src="https://onemg.gumlet.io/ovq7fiphctj4t6jxfuud.jpg"
+                  alt=""
+                />
+                Reviewed By
+                <br />
+                Dr. Lalit Kanodia
+                <br />
+                <br />
+                MBA, MD Pharmacology
+              </p>
+            </li>
+
+            <li className="border-b-2 p-6 dark:bg-gray-800 dark:text-gray-100">
+              <p>
+                {' '}
+                Last updated
+                <br />
+                07 Mar 2024 | 03:48 PM (IST)
+                <br />
+              </p>
+            </li>
+
+            <li className="border-b-2 p-6 dark:bg-gray-800 dark:text-gray-100">
+              <p>
+                {' '}
+                <img
+                  className="w-10 h-11 mr-1 rounded-full"
+                  src="https://onemg.gumlet.io/hpmev62q0ukad0pyv31g.png"
+                  alt=""
+                />
+                We provide authentic,
+                <br /> trustworthy and <br />
+                <br />
+                relevant information
+              </p>
+            </li>
+
+            <li className="border-b-2 p-6 dark:bg-gray-800 dark:text-gray-100">
+              <p>
+                {' '}
+                <img
+                  className="w-10 h-11 mr-1 rounded-full"
+                  src="https://onemg.gumlet.io/cross_with_tag_1_vsxphe.svg"
+                  alt=""
+                />
+                Have issue the content?
+                <br /> trustworthy and <br />
+                <br />
+                relevant information
+              </p>
             </li>
           </ul>
         </div>
