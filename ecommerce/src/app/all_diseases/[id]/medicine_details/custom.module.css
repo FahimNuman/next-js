@@ -143,7 +143,9 @@
     color: #ff6f61 !important;
   }
   
-
+  .list-disc a {
+    color: #ff6f61;
+  }
   /* li {
     display: list-item;
     text-align: -webkit-match-parent;

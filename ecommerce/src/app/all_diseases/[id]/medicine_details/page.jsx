@@ -10,7 +10,7 @@ export default function page() {
                         <span className="Breadcrumbs__separator___2kpBd">&gt;</span>
                     </span>
                     <span>
-                        <a href="/drugs-ailments/" class="button-text Breadcrumbs__breadcrumb___3kKFb">
+                        <a href="#" class="button-text Breadcrumbs__breadcrumb___3kKFb">
                             <span>drugs by ailments</span>
                         </a>
                         <span class="Breadcrumbs__separator___2kpBd">&gt;</span>
@@ -88,8 +88,8 @@ export default function page() {
                                 <div class={`${custom.GenericSaltStyle__repeatBox___3NhJ2} ${custom.GenericSaltStyle__borderBottom___2P_Lp}`}>
                                     <div class={custom.GenericSaltStyle__fCol___2RzoX}>
                                         <span class={custom.GenericSaltStyle__brandColor___1Papj}>
-                                            <a href="/brands/omez-b21leg==">Omez</a>
-                                        </span>
+                                            <a href="#">Omez</a>
+                                        </span> <br/>
                                         <span>Dr Reddy's Laboratories Ltd</span>
                                     </div>
                                     <div className={custom.GenericSaltStyle__alignEnd___1j9mj}>
