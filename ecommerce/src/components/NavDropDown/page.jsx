@@ -52,11 +52,25 @@ const NavDropDown = () => {
   }
 
   return (
-    <div className="navbar bg-base-100 z-100" style={{ zIndex: 9999 }}>
-      <nav className="flex justify-center">
-        <ul className="flex flex-wrap items-center font-medium text-sm ">
+    <div className="navbar bg-base-100 z-100"  style={{ zIndex: 9999 }}>
+      
+      <nav className="flex justify-center ">
+      <div className="flex items-center rounded-full">
+                  <img
+                    src="/allmedicinproductdetails/a8qedeetavlucpi0c9tv.webp"
+                    alt=""
+                    className="h-6 w-6 mr-1"
+                  />
+                  <span className="font-bold text-xs">
+                  
+					<input id="firstname" type="text" placeholder=" Use my current location" className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-400 dark:border-gray-700 dark:text-gray-900" />
+			
+                   
+                  </span>
+                </div>
+        <ul className="flex flex-wrap items-center text-sm ">
           <li
-            className="p-4 lg:px-8 relative flex items-center space-x-1"
+            className="p-4 lg:px-8 relative flex items-center "
             onMouseEnter={handleHealthMouseEnter}
             onMouseLeave={handleHealthMouseLeave}
             style={{ zIndex: 9999 }}
@@ -93,14 +107,11 @@ const NavDropDown = () => {
 
             {isHealthMenuOpen && (
               <ul
-                className="text-xs origin-top-right absolute top-full left-1/2 -translate-x-1/2  max-h-[640px] min-w-[640px] bg-white border border-slate-200 p-2 hover:text-orange-300 rounded-lg shadow-xl grid grid-cols-4 gap-2"
+                className="text-xs origin-top-right absolute top-full left-1/2 -translate-x-1/2  max-h-[540px] min-w-[540px] bg-white border border-slate-200 p-2 hover:text-orange-300 rounded-lg shadow-xl grid grid-cols-4 gap-2"
                 style={{ zIndex: 9999 }}
               >
                 <li>
-                  <Link
-                    className=" text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href=""
-                  ></Link>
+                 
                 </li>
                 <li>
                   <Link
@@ -129,6 +140,8 @@ const NavDropDown = () => {
               </ul>
             )}
           </li>
+
+          
 
           <li
             className="p-4 lg:px-8 relative flex items-center space-x-1"
