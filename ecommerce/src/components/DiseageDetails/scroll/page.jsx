@@ -25,7 +25,7 @@ const Sidebar_scroll = () => {
     }
   }, [activeLink])
   return (
-    <div>
+    <div className='flex flex-col w-1/4 bg-gray-200 dark:bg-gray-800'>
       <div
         className="drawer lg:drawer-open shadow-xl"
         style={{
@@ -40,7 +40,7 @@ const Sidebar_scroll = () => {
         </div>
         <div
           className="drawer-side"
-          style={{ overflowY: 'auto', maxHeight: 'calc(100vh - 4rem)' }}
+          style={{ overflowY: 'auto', maxHeight: 'calc(120vh - 4rem)' }}
         >
           <label
             htmlFor="my-drawer-2"
