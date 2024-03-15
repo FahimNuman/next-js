@@ -8,32 +8,26 @@ export default async function Posts() {
   const categories = await getAllCategoriesByCare();
   return (
     <>
-      {categories.map(category =>
-        <div key={category.id} className="max-w-xs sm:max-w-sm p-2 rounded-md shadow-md">
-           <Link href={`@/src/app/`}>
-          <div className="w-24 h-24 sm:w-32 sm:h-24"> {/* Adjust width and height as per your requirement */}
+    {categories.map(category =>
+      <div key={category.id} className="max-w-xs max-w-24 p-2 rounded-md shadow-md flex flex-col items-center">
+        <Link href={`@/src/app/`}>
+          <div className="sm:w-32 sm:h-32 max-w-32 max-h-24 flex justify-center items-center">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtELB6BLBdGNjRrLnSK3G8fkX9m4FVF3yWlsqhBG2HCmg-Leoh-OuFCscijxBeMc87ZMo&usqp=CAU"
               alt=""
-              className="object-cover object-center w-full rounded-md h-72 max-h-24 max-w-24"
+              className="object-cover object-center rounded-md max-w-full max-h-full"
             />
           </div>
-          <div className="mt-2 mb-1">
-            <span className="block text-xs font-medium tracki uppercase">
-              
-            </span>
-           
-            <h2 className="text-lg font-semibold tracki">
-             
-            </h2>
-
-          </div>
-          </Link>
+        </Link>
+        <div className="mt-2 mb-1 text-center">
+          <span className="block text-xs font-medium tracki uppercase">
+            {category.title.split(' ').slice(0, 2).join(' ')}
+          </span>
         </div>
-
-    
-      )}
-    </>
+      </div>
+    )}
+  </>
+  
 
   )
 }
