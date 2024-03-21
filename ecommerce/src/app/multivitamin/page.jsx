@@ -7,17 +7,21 @@ import getAllProducts from '@/lib/allProducts';
 const Page = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const [sortBy, setSortBy] = useState(''); // State to hold the selected sort option
+  const [sortBy, setSortBy] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(9); // Change this value as needed
+  const [brands, setBrands] = useState([]);
+  const [usages, setUsages] = useState([]);
 
   useEffect(() => {
     getAllProducts()
       .then(data => setProducts(data))
       .catch(error => console.error('Error fetching products:', error));
-  }, []); 
+  }, []);
 
   useEffect(() => {
     filterProducts();
-  }, [products, sortBy]);
+  }, [products, sortBy, currentPage, brands, usages]);
 
   const updateFilteredProducts = (filtered) => {
     setFilteredProducts(filtered);
@@ -27,8 +31,41 @@ const Page = () => {
     setSortBy(e.target.value);
   };
 
+  const handleFilterChange = (filterType, value) => {
+    switch (filterType) {
+      case 'Brands':
+        setBrands(brands => {
+          if (brands.includes(value)) {
+            return brands.filter(brand => brand !== value);
+          } else {
+            return [...brands, value];
+          }
+        });
+        break;
+      case 'Usages':
+        setUsages(usages => {
+          if (usages.includes(value)) {
+            return usages.filter(usage => usage !== value);
+          } else {
+            return [...usages, value];
+          }
+        });
+        break;
+      default:
+        break;
+    }
+  };
+
   const filterProducts = () => {
-    let sortedProducts = [...products];
+    let filtered = products.filter(product => {
+      if ((brands.length === 0 || brands.includes(product.brand)) &&
+          (usages.length === 0 || usages.includes(product.usage))) {
+        return true;
+      }
+      return false;
+    });
+
+    let sortedProducts = [...filtered];
 
     if (sortBy === 'relevance') {
       // Add relevance sorting logic here
@@ -45,11 +82,29 @@ const Page = () => {
     setFilteredProducts(sortedProducts);
   };
 
+  const paginate = pageNumber => setCurrentPage(pageNumber);
+
+  const getPageNumbers = () => {
+    const totalProducts = filteredProducts.length;
+    const totalPages = Math.ceil(totalProducts / itemsPerPage);
+    const pageNumbers = [];
+
+    for (let i = 1; i <= totalPages; i++) {
+      pageNumbers.push(i);
+    }
+    return pageNumbers;
+  };
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredProducts.slice(indexOfFirstItem, indexOfLastItem);
+
   return (
     <div className="flex">
       <Sidebar
         products={products}
         updateFilteredProducts={updateFilteredProducts}
+        handleFilterChange={handleFilterChange}
       />
       <div className='w-2/3'>
         <div className="flex justify-end mb-2">
@@ -63,10 +118,19 @@ const Page = () => {
           </select>
         </div>
         <h2>All Products</h2>
-        <AllProducts products={filteredProducts} />
+        <AllProducts products={currentItems} />
+        {/* Pagination */}
+        <div className='flex gap-4 justify-center my-4'>
+          {getPageNumbers().map(number => (
+            <button key={number} onClick={() => paginate(number)}>
+              {number}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
 export default Page;
+

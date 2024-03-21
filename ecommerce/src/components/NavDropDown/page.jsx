@@ -167,7 +167,7 @@ const NavDropDown = () => {
                 <li>
                   <Link
                     className="text-slate-400 hover:bg-slate-50 flex items-center p-2 hover:text-orange-300"
-                    href="/vitamin_supplement"
+                    href="/multivitamin"
                   >
                     Vitamin & Supplements
                   </Link>

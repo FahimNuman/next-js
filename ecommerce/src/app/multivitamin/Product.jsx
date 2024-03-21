@@ -10,7 +10,7 @@ const SingleProduct = ({ product }) => {
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">{product.name}</h2>
-            <p>{product.description}</p>
+            <p>{product.price}</p>
             <div className="card-actions">
               <button className="btn">Buy Now</button>
             </div>

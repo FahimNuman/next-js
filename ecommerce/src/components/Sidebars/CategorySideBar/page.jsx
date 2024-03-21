@@ -4,7 +4,6 @@ const Sidebar = ({ products, updateFilteredProducts }) => {
   const [brands, setBrands] = useState([]);
   const [usages, setUsages] = useState([]);
 
-  // Set filteredProducts initially and whenever products change
   useEffect(() => {
     updateFilteredProducts(products);
   }, [products]);
@@ -47,28 +46,51 @@ const Sidebar = ({ products, updateFilteredProducts }) => {
     updateFilteredProducts(filtered);
   };
 
-  return (
-    <div className="w-64 bg-white p-4 overflow-y-auto " style={{ maxHeight: 'calc(100vh - 64px)' }}>
-      <div className="mb-4">
-        <h2>Vitamins & Supplements</h2>
-        <div>
-          <h3>BRANDS</h3>
-          {['Inlife', 'HealthyHey', 'HealthVit', 'MyFitFuel', 'Now Foods'].map((brand, index) => (
+  const renderBrandOptions = () => {
+    const brandOptions = ['Inlife', 'HealthyHey', 'HealthVit', 'MyFitFuel', 'Now Foods',
+      'Vitabiotics', 'Natures Bounty', 'Nutrilite', 'Garden of Life',
+      'SmartyPants', 'Rainbow Light', 'Solgar', 'Kirkland Signature',
+      'Centrum', 'NOW'];
+
+    return (
+      <div className="my-3">
+        <h3 className='text-xl font-semibold py-2'>BRANDS</h3>
+        <div className={brandOptions.length > 5 ? 'overflow-y-auto max-h-40' : ''}>
+          {brandOptions.map((brand, index) => (
             <div key={index}>
               <input type="checkbox" checked={brands.includes(brand)} onChange={() => handleFilterChange('Brands', brand)} />
               <label>{brand}</label>
             </div>
           ))}
         </div>
-        <div>
-          <h3>USAGE</h3>
-          {['Health Care', 'Liver Care', 'Skin Care', 'Other'].map((usage, index) => (
+      </div>
+    );
+  };
+
+  const renderUsageOptions = () => {
+    const usageOptions = ['Health Care', 'Liver Care', 'Skin Care', 'Mind Care', 'Cardiac Care', 'Women Care', 'Stomach Care'];
+
+    return (
+      <div className="my-3">
+        <h3 className='text-xl font-semibold py-2'>USAGE</h3>
+        <div className={usageOptions.length > 5 ? 'overflow-y-auto max-h-40' : ''}>
+          {usageOptions.map((usage, index) => (
             <div key={index}>
               <input type="checkbox" checked={usages.includes(usage)} onChange={() => handleFilterChange('Usages', usage)} />
               <label>{usage}</label>
             </div>
           ))}
         </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="w-64 bg-white p-4" style={{ maxHeight: 'calc(100vh - 64px)', overflow: 'hidden' }}>
+      <div className="mb-4">
+        <h2>Vitamins & Supplements</h2>
+        {renderBrandOptions()}
+        {renderUsageOptions()}
       </div>
     </div>
   );
