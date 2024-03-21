@@ -6,11 +6,19 @@ const Navbar = () => {
         <div>
            
           <div className="navbar bg-base-100">
-            <div className="flex-1 ">
-              <Link href="/" className="size-22">
-              <strong>Fortis Mart</strong>
-              </Link>
-            </div>
+          <div className="flex-1">
+  <Link href="/" className="size-22">
+    <strong>
+      <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_qk4ycDPBhejplCpLWK9dvtSfRFb3Xc1AXBl8FIkBNf5T2icOslBBJLoxbwxti7QHG0&usqp=CAU" 
+        alt="" 
+        style={{ width: '50px', height: 'auto', display: 'inline-block' }}  
+      /> 
+      Fortis Mart
+    </strong>
+  </Link>
+</div>
+
            
             <div className="hidden lg:flex space-x-2">
               <Link href="/About" className="font-base hover:text-blue-500">
