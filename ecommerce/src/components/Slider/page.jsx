@@ -7,7 +7,19 @@ import Posts from '../CategoryByCare/page'
 
 const Slider = () => {
   useEffect(() => {
-    
+    const cartItemStyle = {
+      // Your regular styles for cart item
+      padding: '10px',
+      border: '1px solid #ccc',
+      borderRadius: '8px',
+      transition: 'background-color 0.3s ease',
+      cursor: 'pointer',
+    };
+  
+    const cartItemActiveStyle = {
+      // Your styles when cart item is active
+      border: '2px solid blue',
+    };
     const slider = new Glide('.glide-03', {
       type: 'carousel',
       focusAt: 'center',
@@ -42,13 +54,13 @@ const Slider = () => {
    <div className=" flex whitespace-no-wrap ">
       <div className="glide-03 relative w-full">
         <div className="overflow-hidden " data-glide-el="track">
-          <ul className=" whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
+          <ul className="glass whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-2d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0 ">
             <Posts/>
             
           </ul>
         </div>
         {/*    <!-- Controls --> */}
-        <div
+        {/* <div
           className="absolute left-0 top-1/2 flex h-0 w-full items-center justify-between px-4 "
           data-glide-el="controls"
         >
@@ -94,9 +106,9 @@ const Slider = () => {
               />
             </svg>
           </button>
-        </div>
+        </div> */}
         {/*    <!-- Indicators --> */}
-        <div
+        {/* <div
           className="absolute bottom-0 flex w-full items-center justify-center gap-2"
           data-glide-el="controls[nav]"
         >
@@ -128,7 +140,7 @@ const Slider = () => {
           >
             <span className="block h-2 w-2 rounded-full bg-white/20 ring-1 ring-slate-700 transition-colors duration-300 focus:outline-none"></span>
           </button>
-        </div>
+        </div> */}
       </div>
       </div>
       </div>

@@ -8,8 +8,8 @@ const NavSection = () => {
   return (
     <div>
       <ShortBanner/>
+      
         <Navbar/>
-        <BottomNav/>
         <NavDropDown/>
         
     </div>

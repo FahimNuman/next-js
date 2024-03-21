@@ -13,10 +13,10 @@ const CarouselOne = () => {
     };
   
     const items = [
-      { title: 'Dr.Orijit Sing', description: 'Initially, I was a little skeptical of consulting a doctor online. But the consultation turned out to be honest and cool, the doctor\'s behavior was friendly. The best part is that I saved so much time and money!.' },
-      { title: 'Dr.Strange', description: 'Dr. Chakraborty is so concerned about his patient. I sincerely wish him the best. He always takes the time to understand the problem and on the basis of that he takes the decision and explains it very well. And if you miss out on anything, you can come back with more questions.' },
-      { title: 'Dr.Orijit Sing', description: 'I installed the app and went for a free consultation with a dietician. The advice given by Dr. Mirza was simply great. He shared a detailed diet chart and exercises with me which was easy to incorporate into my hectic schedule.' },
-      { title: 'Dr.Orijit Sing', description: 'I installed the app and went for a free consultation with a dietician. The advice given by Dr. Mirza was simply great. He shared a detailed diet chart and exercises with me which was easy to incorporate into my hectic schedule.' },
+      { title: 'Dr.Bidhan Chondro', description: 'Initially, I was a little skeptical of consulting a doctor online. But the consultation turned out to be honest and cool, the doctor\'s behavior was friendly. The best part is that I saved so much time and money!.' },
+      { title: 'Dr.Ali Hossain', description: 'Dr. Chakraborty is so concerned about his patient. I sincerely wish him the best. He always takes the time to understand the problem and on the basis of that he takes the decision and explains it very well. And if you miss out on anything, you can come back with more questions.' },
+      { title: 'Dr.Mita Chowdhuri', description: 'I installed the app and went for a free consultation with a dietician. The advice given by Dr. Mirza was simply great. He shared a detailed diet chart and exercises with me which was easy to incorporate into my hectic schedule.' },
+      { title: 'Dr.Km Hasan', description: 'I installed the app and went for a free consultation with a dietician. The advice given by Dr. Mirza was simply great. He shared a detailed diet chart and exercises with me which was easy to incorporate into my hectic schedule.' },
     ];
   
     return (
