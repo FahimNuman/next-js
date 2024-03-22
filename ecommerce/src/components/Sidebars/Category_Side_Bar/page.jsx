@@ -1,4 +1,3 @@
-
 'use client';
 
 import { Sidebar } from 'flowbite-react';
@@ -11,7 +10,9 @@ import {
   HiShoppingBag,
   HiTable,
   HiUser,
-} from 'react-icons/hi';
+} 
+
+from 'react-icons/hi';
 import { twMerge } from 'tailwind-merge';
 
 export default function Category_Side_Bar() {

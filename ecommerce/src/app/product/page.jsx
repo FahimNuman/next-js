@@ -22,7 +22,7 @@ const page = () => {
   return (
     <div>
       <div className='mx-4 md:mx-16 pb-4 px-2'>
-        <Breadcrumb_custom />
+        {/* <Breadcrumb_custom /> */}
         <div className='flex flex-col md:flex-row'>
           <div className='w-full md:w-1/3 flex justify-center items-start mt-8'>
             <PictureGallery />
@@ -95,7 +95,6 @@ const page = () => {
             </div>
           </div>
         </div>
-
       </div>
 
       <div className='bg-[#f8f8f8] flex flex-col md:flex-row'>
@@ -174,7 +173,6 @@ const page = () => {
           <div className='w-full'>
             <div className='rating-div w-full md:w-2/5'>
               <Rating />
-
             </div>
             <Comment_Secion />
           </div>
@@ -252,16 +250,14 @@ const page = () => {
                 <div className='h-16 w-16'><img src="	https://1mgstaticfiles.s3.amazonaws.com/skuicons/delivery.png" alt="" /></div>
                 <div className='text-center w-1/2'>Home Delivery</div>
               </div>
-        
+
             </div>
 
           </div>
-          <Slider/>
+
         
         </div>
       </div>
-
-      
     </div>
   )
 }
