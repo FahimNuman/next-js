@@ -2248,6 +2248,7 @@ __metadata:
     postcss: "npm:^8"
     react: "npm:^18"
     react-dom: "npm:^18"
+    react-icons: "npm:^5.0.1"
     react-scroll: "npm:^1.9.0"
     tailwindcss: "npm:^3.4.1"
   languageName: unknown
@@ -5338,6 +5339,29 @@ __metadata:
   peerDependencies:
     react: "*"
   checksum: 10c0/2170f43031ee7365539f72d4075cbe6c7fbf9a66d6cf4494aa9393b194272da0564f5b19d1b24dbfc567c0ac89f5fe5b8974d92dd83f61e252388dde6a226fb8
+  languageName: node
+  linkType: hard
+
+"react-icons@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "react-icons@npm:5.0.1"
+  peerDependencies:
+    react: "*"
+  checksum: 10c0/717022d93a3b2b30082f86fbb3c725a94a603b3fa1c611533439cc886f691a13b1833c30446d257a177667779239eac57411fa7516d8a4787bd735e965c9f63d
+  languageName: node
+  linkType: hard
+
+"react-indiana-drag-scroll@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "react-indiana-drag-scroll@npm:2.2.0"
+  dependencies:
+    classnames: "npm:^2.2.6"
+    debounce: "npm:^1.2.0"
+    easy-bem: "npm:^1.1.1"
+  peerDependencies:
+    react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/2c337ec8b2cf0628ac4f17df3c84d4a24b5357f8f93d5a4cfc74c4d104cc1bc32c3e0eeb33ed5ffd505d74bc345a30615a0b0b4f6a761767db57378f45e8d87b
   languageName: node
   linkType: hard
 

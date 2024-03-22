@@ -22,7 +22,7 @@ const page = () => {
   return (
     <div>
       <div className='mx-4 md:mx-16 pb-4 px-2'>
-        <Breadcrumb_custom />
+        {/* <Breadcrumb_custom /> */}
         <div className='flex flex-col md:flex-row'>
           <div className='w-full md:w-1/3 flex justify-center items-start mt-8'>
             <PictureGallery />
@@ -254,8 +254,8 @@ const page = () => {
             </div>
 
           </div>
-          <Slider />
 
+        
         </div>
       </div>
     </div>
