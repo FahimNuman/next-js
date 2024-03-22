@@ -46,3 +46,5 @@ netlify.toml
 .pnp.cjs
 .pnp.loader.mjs
 .yarn/unplugged/
+
+.package.json

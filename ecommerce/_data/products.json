@@ -1,34 +1,304 @@
 {
   "products": [
-    { "id": 11, "name": "Vitamin E Supplement", "description": "Description of Vitamin E Supplement", "price": 12, "brand": "Inlife", "usage": "Skin Care", "customerRating": 4.6, "discount": 0 },
-    { "id": 12, "name": "Turmeric Curcumin Capsules", "description": "Description of Turmeric Curcumin Capsules", "price": 18, "brand": "HealthyHey", "usage": "Joint Health", "customerRating": 4.3, "discount": 10 },
-    { "id": 13, "name": "Magnesium Citrate Supplement", "description": "Description of Magnesium Citrate Supplement", "price": 22, "brand": "HealthVit", "usage": "Muscle Relaxation", "customerRating": 4.7, "discount": 15 },
-    { "id": 14, "name": "Protein Powder", "description": "Description of Protein Powder", "price": 27, "brand": "MyFitFuel", "usage": "Muscle Building", "customerRating": 4.5, "discount": 5 },
-    { "id": 15, "name": "Green Tea Extract", "description": "Description of Green Tea Extract", "price": 32, "brand": "Now Foods", "usage": "Weight Management", "customerRating": 4.4, "discount": 20 },
-    { "id": 16, "name": "Zinc Supplement", "description": "Description of Zinc Supplement", "price": 37, "brand": "Inlife", "usage": "Immune Support", "customerRating": 4.8, "discount": 10 },
-    { "id": 17, "name": "Ashwagandha Capsules", "description": "Description of Ashwagandha Capsules", "price": 42, "brand": "HealthyHey", "usage": "Stress Relief", "customerRating": 4.2, "discount": 15 },
-    { "id": 18, "name": "Vitamin B Complex", "description": "Description of Vitamin B Complex", "price": 47, "brand": "HealthVit", "usage": "Energy Boost", "customerRating": 4.9, "discount": 5 },
-    { "id": 19, "name": "Melatonin Tablets", "description": "Description of Melatonin Tablets", "price": 52, "brand": "MyFitFuel", "usage": "Sleep Aid", "customerRating": 4.3, "discount": 0 },
-    { "id": 20, "name": "Garcinia Cambogia Extract", "description": "Description of Garcinia Cambogia Extract", "price": 57, "brand": "Now Foods", "usage": "Appetite Control", "customerRating": 4.8, "discount": 10 },
-    { "id": 21, "name": "Coenzyme Q10 Supplement", "description": "Description of Coenzyme Q10 Supplement", "price": 11, "brand": "Inlife", "usage": "Heart Health", "customerRating": 4.5, "discount": 0 },
-    { "id": 22, "name": "L-Arginine Capsules", "description": "Description of L-Arginine Capsules", "price": 17, "brand": "HealthyHey", "usage": "Blood Circulation", "customerRating": 4.2, "discount": 10 },
-    { "id": 23, "name": "Collagen Powder", "description": "Description of Collagen Powder", "price": 21, "brand": "HealthVit", "usage": "Skin Elasticity", "customerRating": 4.8, "discount": 15 },
-    { "id": 24, "name": "MCT Oil", "description": "Description of MCT Oil", "price": 26, "brand": "MyFitFuel", "usage": "Ketogenic Diet", "customerRating": 4.6, "discount": 5 },
-    { "id": 25, "name": "Fiber Supplement", "description": "Description of Fiber Supplement", "price": 31, "brand": "Now Foods", "usage": "Digestive Health", "customerRating": 4.4, "discount": 20 },
-    { "id": 26, "name": "Spirulina Tablets", "description": "Description of Spirulina Tablets", "price": 36, "brand": "Inlife", "usage": "Detoxification", "customerRating": 4.7, "discount": 10 },
-    { "id": 27, "name": "Vitamin K2 Supplement", "description": "Description of Vitamin K2 Supplement", "price": 41, "brand": "HealthyHey", "usage": "Bone Health", "customerRating": 4.3, "discount": 15 },
-    { "id": 28, "name": "L-Glutamine Powder", "description": "Description of L-Glutamine Powder", "price": 46, "brand": "HealthVit", "usage": "Muscle Recovery", "customerRating": 4.9, "discount": 5 },
-    { "id": 29, "name": "Maca Root Capsules", "description": "Description of Maca Root Capsules", "price": 51, "brand": "MyFitFuel", "usage": "Hormonal Balance", "customerRating": 4.2, "discount": 0 },
-    { "id": 30, "name": "Saw Palmetto Supplement", "description": "Description of Saw Palmetto Supplement", "price": 56, "brand": "Now Foods", "usage": "Prostate Health", "customerRating": 4.8, "discount": 10 },
-    { "id": 31, "name": "Vitamin D3 Supplement", "description": "Description of Vitamin D3 Supplement", "price": 13, "brand": "Vitabiotics", "usage": "Bone Health", "customerRating": 4.6, "discount": 0 },
-    { "id": 32, "name": "Omega-3 Fish Oil", "description": "Description of Omega-3 Fish Oil", "price": 19, "brand": "Nature's Bounty", "usage": "Heart Health", "customerRating": 4.3, "discount": 10 },
-    { "id": 33, "name": "Probiotic Supplement", "description": "Description of Probiotic Supplement", "price": 23, "brand": "Nutrilite", "usage": "Digestive Health", "customerRating": 4.7, "discount": 15 },
-    { "id": 34, "name": "Vitamin C Chewables", "description": "Description of Vitamin C Chewables", "price": 28, "brand": "Garden of Life", "usage": "Immune Support", "customerRating": 4.5, "discount": 5 },
-    { "id": 35, "name": "Calcium and Vitamin D Supplement", "description": "Description of Calcium and Vitamin D Supplement", "price": 33, "brand": "SmartyPants", "usage": "Bone Health", "customerRating": 4.9, "discount": 0 },
-    { "id": 36, "name": "Hair, Skin, and Nails Supplement", "description": "Description of Hair, Skin, and Nails Supplement", "price": 38, "brand": "Rainbow Light", "usage": "Beauty Care", "customerRating": 4.2, "discount": 10 },
-    { "id": 37, "name": "Joint Support Capsules", "description": "Description of Joint Support Capsules", "price": 43, "brand": "Solgar", "usage": "Joint Health", "customerRating": 4.8, "discount": 15 },
-    { "id": 38, "name": "Vitamin B12 Supplement", "description": "Description of Vitamin B12 Supplement", "price": 48, "brand": "Kirkland Signature", "usage": "Energy Boost", "customerRating": 4.4, "discount": 20 },
-    { "id": 39, "name": "Iron Supplement", "description": "Description of Iron Supplement", "price": 53, "brand": "Centrum", "usage": "Anemia Management", "customerRating": 4.7, "discount": 10 },
-    { "id": 40, "name": "Ashwagandha Capsules", "description": "Description of Ashwagandha Capsules", "price": 58, "brand": "NOW", "usage": "Stress Relief", "customerRating": 4.5, "discount": 5 }
+    {
+      "id": 11,
+      "name": "Vitamin E Supplement",
+      "description": "Description of Vitamin E Supplement",
+      "price": 12,
+      "brand": "Inlife",
+      "usage": "Skin Care",
+      "customerRating": 4.6,
+      "discount": 0
+    },
+    {
+      "id": 12,
+      "name": "Turmeric Curcumin Capsules",
+      "description": "Description of Turmeric Curcumin Capsules",
+      "price": 18,
+      "brand": "HealthyHey",
+      "usage": "Joint Health",
+      "customerRating": 4.3,
+      "discount": 10
+    },
+    {
+      "id": 13,
+      "name": "Magnesium Citrate Supplement",
+      "description": "Description of Magnesium Citrate Supplement",
+      "price": 22,
+      "brand": "HealthVit",
+      "usage": "Muscle Relaxation",
+      "customerRating": 4.7,
+      "discount": 15
+    },
+    {
+      "id": 14,
+      "name": "Protein Powder",
+      "description": "Description of Protein Powder",
+      "price": 27,
+      "brand": "MyFitFuel",
+      "usage": "Muscle Building",
+      "customerRating": 4.5,
+      "discount": 5
+    },
+    {
+      "id": 15,
+      "name": "Green Tea Extract",
+      "description": "Description of Green Tea Extract",
+      "price": 32,
+      "brand": "Now Foods",
+      "usage": "Weight Management",
+      "customerRating": 4.4,
+      "discount": 20
+    },
+    {
+      "id": 16,
+      "name": "Zinc Supplement",
+      "description": "Description of Zinc Supplement",
+      "price": 37,
+      "brand": "Inlife",
+      "usage": "Immune Support",
+      "customerRating": 4.8,
+      "discount": 10
+    },
+    {
+      "id": 17,
+      "name": "Ashwagandha Capsules",
+      "description": "Description of Ashwagandha Capsules",
+      "price": 42,
+      "brand": "HealthyHey",
+      "usage": "Stress Relief",
+      "customerRating": 4.2,
+      "discount": 15
+    },
+    {
+      "id": 18,
+      "name": "Vitamin B Complex",
+      "description": "Description of Vitamin B Complex",
+      "price": 47,
+      "brand": "HealthVit",
+      "usage": "Energy Boost",
+      "customerRating": 4.9,
+      "discount": 5
+    },
+    {
+      "id": 19,
+      "name": "Melatonin Tablets",
+      "description": "Description of Melatonin Tablets",
+      "price": 52,
+      "brand": "MyFitFuel",
+      "usage": "Sleep Aid",
+      "customerRating": 4.3,
+      "discount": 0
+    },
+    {
+      "id": 20,
+      "name": "Garcinia Cambogia Extract",
+      "description": "Description of Garcinia Cambogia Extract",
+      "price": 57,
+      "brand": "Now Foods",
+      "usage": "Appetite Control",
+      "customerRating": 4.8,
+      "discount": 10
+    },
+    {
+      "id": 21,
+      "name": "Coenzyme Q10 Supplement",
+      "description": "Description of Coenzyme Q10 Supplement",
+      "price": 11,
+      "brand": "Inlife",
+      "usage": "Heart Health",
+      "customerRating": 4.5,
+      "discount": 0
+    },
+    {
+      "id": 22,
+      "name": "L-Arginine Capsules",
+      "description": "Description of L-Arginine Capsules",
+      "price": 17,
+      "brand": "HealthyHey",
+      "usage": "Blood Circulation",
+      "customerRating": 4.2,
+      "discount": 10
+    },
+    {
+      "id": 23,
+      "name": "Collagen Powder",
+      "description": "Description of Collagen Powder",
+      "price": 21,
+      "brand": "HealthVit",
+      "usage": "Skin Elasticity",
+      "customerRating": 4.8,
+      "discount": 15
+    },
+    {
+      "id": 24,
+      "name": "MCT Oil",
+      "description": "Description of MCT Oil",
+      "price": 26,
+      "brand": "MyFitFuel",
+      "usage": "Ketogenic Diet",
+      "customerRating": 4.6,
+      "discount": 5
+    },
+    {
+      "id": 25,
+      "name": "Fiber Supplement",
+      "description": "Description of Fiber Supplement",
+      "price": 31,
+      "brand": "Now Foods",
+      "usage": "Digestive Health",
+      "customerRating": 4.4,
+      "discount": 20
+    },
+    {
+      "id": 26,
+      "name": "Spirulina Tablets",
+      "description": "Description of Spirulina Tablets",
+      "price": 36,
+      "brand": "Inlife",
+      "usage": "Detoxification",
+      "customerRating": 4.7,
+      "discount": 10
+    },
+    {
+      "id": 27,
+      "name": "Vitamin K2 Supplement",
+      "description": "Description of Vitamin K2 Supplement",
+      "price": 41,
+      "brand": "HealthyHey",
+      "usage": "Bone Health",
+      "customerRating": 4.3,
+      "discount": 15
+    },
+    {
+      "id": 28,
+      "name": "L-Glutamine Powder",
+      "description": "Description of L-Glutamine Powder",
+      "price": 46,
+      "brand": "HealthVit",
+      "usage": "Muscle Recovery",
+      "customerRating": 4.9,
+      "discount": 5
+    },
+    {
+      "id": 29,
+      "name": "Maca Root Capsules",
+      "description": "Description of Maca Root Capsules",
+      "price": 51,
+      "brand": "MyFitFuel",
+      "usage": "Hormonal Balance",
+      "customerRating": 4.2,
+      "discount": 0
+    },
+    {
+      "id": 30,
+      "name": "Saw Palmetto Supplement",
+      "description": "Description of Saw Palmetto Supplement",
+      "price": 56,
+      "brand": "Now Foods",
+      "usage": "Prostate Health",
+      "customerRating": 4.8,
+      "discount": 10
+    },
+    {
+      "id": 31,
+      "name": "Vitamin D3 Supplement",
+      "description": "Description of Vitamin D3 Supplement",
+      "price": 13,
+      "brand": "Vitabiotics",
+      "usage": "Bone Health",
+      "customerRating": 4.6,
+      "discount": 0
+    },
+    {
+      "id": 32,
+      "name": "Omega-3 Fish Oil",
+      "description": "Description of Omega-3 Fish Oil",
+      "price": 19,
+      "brand": "Nature's Bounty",
+      "usage": "Heart Health",
+      "customerRating": 4.3,
+      "discount": 10
+    },
+    {
+      "id": 33,
+      "name": "Probiotic Supplement",
+      "description": "Description of Probiotic Supplement",
+      "price": 23,
+      "brand": "Nutrilite",
+      "usage": "Digestive Health",
+      "customerRating": 4.7,
+      "discount": 15
+    },
+    {
+      "id": 34,
+      "name": "Vitamin C Chewables",
+      "description": "Description of Vitamin C Chewables",
+      "price": 28,
+      "brand": "Garden of Life",
+      "usage": "Immune Support",
+      "customerRating": 4.5,
+      "discount": 5
+    },
+    {
+      "id": 35,
+      "name": "Calcium and Vitamin D Supplement",
+      "description": "Description of Calcium and Vitamin D Supplement",
+      "price": 33,
+      "brand": "SmartyPants",
+      "usage": "Bone Health",
+      "customerRating": 4.9,
+      "discount": 0
+    },
+    {
+      "id": 36,
+      "name": "Hair, Skin, and Nails Supplement",
+      "description": "Description of Hair, Skin, and Nails Supplement",
+      "price": 38,
+      "brand": "Rainbow Light",
+      "usage": "Beauty Care",
+      "customerRating": 4.2,
+      "discount": 10
+    },
+    {
+      "id": 37,
+      "name": "Joint Support Capsules",
+      "description": "Description of Joint Support Capsules",
+      "price": 43,
+      "brand": "Solgar",
+      "usage": "Joint Health",
+      "customerRating": 4.8,
+      "discount": 15
+    },
+    {
+      "id": 38,
+      "name": "Vitamin B12 Supplement",
+      "description": "Description of Vitamin B12 Supplement",
+      "price": 48,
+      "brand": "Kirkland Signature",
+      "usage": "Energy Boost",
+      "customerRating": 4.4,
+      "discount": 20
+    },
+    {
+      "id": 39,
+      "name": "Iron Supplement",
+      "description": "Description of Iron Supplement",
+      "price": 53,
+      "brand": "Centrum",
+      "usage": "Anemia Management",
+      "customerRating": 4.7,
+      "discount": 10
+    },
+    {
+      "id": 40,
+      "name": "Ashwagandha Capsules",
+      "description": "Description of Ashwagandha Capsules",
+      "price": 58,
+      "brand": "NOW",
+      "usage": "Stress Relief",
+      "customerRating": 4.5,
+      "discount": 5
+    }
   ]
 }

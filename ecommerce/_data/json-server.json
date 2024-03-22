@@ -1,0 +1,593 @@
+{
+    "categories": [
+        {
+          "id": 1,
+          "name": "Liver Care",
+          "image": "https://example.com/liver-care-image.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Diabetes Care",
+          "image": "https://example.com/diabetes-care-image.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Heart Care",
+          "image": "https://example.com/heart-care-image.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Stomach Care",
+          "image": "https://example.com/stomach-care-image.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Liver Care",
+          "image": "https://example.com/liver-care-image.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Bone-Joint-Muscle Care",
+          "image": "https://example.com/bone-joint-muscle-care-image.jpg"
+        },
+        {
+          "id": 7,
+          "name": "Kidney Care",
+          "image": "https://example.com/kidney-care-image.jpg"
+        },
+        {
+          "id": 8,
+          "name": "Derma Care",
+          "image": "https://example.com/derma-care-image.jpg"
+        },
+        {
+          "id": 9,
+          "name": "Respiratory Care",
+          "image": "https://example.com/respiratory-care-image.jpg"
+        },
+        {
+          "id": 10,
+          "name": "Eye Care",
+          "image": "https://example.com/eye-care-image.jpg"
+        }
+      ],
+    "drug_therapeutic_classes": [
+        {
+          "id": 1,
+          "parent": "Anti Diabetic",
+          "children": [
+            "Human Insulin Basal",
+            "Human Insulin Premix",
+            "Human Insulin Rapid",
+            "Human Insulins And Analogues",
+            "Insulin Analogues Basal",
+            "Insulin Analogues Rapid",
+            "Oral Antidiabetics",
+            "Other Drugs Used In Diabetes"
+          ]
+        },
+        {
+          "id": 2,
+          "parent": "Anti Infectives",
+          "children": [
+            "All Other Anti Infectives",
+            "Amebicides",
+            "Aminoglycosides",
+            "Anthelmintics Excluding Schistosomicides",
+            "Anti Flu Drugs",
+            "Antitubercular Products",
+            "Antivirals Excluding Hiv Products",
+            "Broad Spectrum Penicillins",
+            "Carbenicillin And Similar Types",
+            "Cephalosporins",
+            "Chloramphenicol And Combinations",
+            "Drugs For Treatment Of Lepra",
+            "Fluoroquinolones",
+            "Hiv Antivirals",
+            "Macrolides And Similar Types",
+            "Medium And Narrow Spectrum Penicillins",
+            "Other Antibacterials",
+            "Other Anti Parasitic Agents",
+            "Other Beta Lactam Antibacterials Excluding Penicillins Cephalosporins",
+            "Schistosomicides",
+            "Systemic Agents For Fungal Infections",
+            "Systemic Sulphonamides Excluding Trimethoprim Combinations",
+            "Tetracyclines And Combinations",
+            "Trichomonacides",
+            "Trimethoprim And Similar Formulations"
+          ]
+        },
+        {
+          "id": 3,
+          "parent": "Anti Malarials",
+          "children": [
+            "Other Anti Malarials"
+          ]
+        },
+        {
+          "id": 4,
+          "parent": "Anti Neoplastics",
+          "children": [
+            "Alkylating Agents",
+            "All Other Antineoplastics",
+            "Antimetabolites",
+            "Antineoplastic Antibiotics",
+            "Anti Tnf Products",
+            "Cytostatic Hormone Antagonists",
+            "Cytostatic Hormones",
+            "Immunostimulating Agents Excluding Interferons",
+            "Immunosuppressive Agents",
+            "Interferons",
+            "Vinca Alkaloids And Other Plant Products"
+          ]
+        },
+        {
+          "id": 5,
+          "parent": "Blood Related",
+          "children": [
+            "Antagonists Antidotes To Anticoagulants",
+            "Antifibrinolytics",
+            "Chelating Agents",
+            "Detoxifying Agents For Antineoplastic Treatment",
+            "Dextrans",
+            "Direct Factor Xa Inhibitors",
+            "Electrolyte Solutions",
+            "Erythropoietin Products",
+            "Haematinics",
+            "Heparins",
+            "Hyaluronidase",
+            "Irrigating Solutions",
+            "Liver Extracts And Combinations With B12",
+            "Other Antithrombotic Agents Blood",
+            "Platelet Aggregation Inhibitors",
+            "Proteinase Inhibitors",
+            "Solutions For Osmotic Therapy",
+            "Standard Solutions",
+            "Systemic Heamostatics",
+            "Vitamin K Antagonists"
+          ]
+        },
+        {
+          "id": 6,
+          "parent": "Cardiac",
+          "children": [
+            "Ace Inhibitors Combined With Anti Hypertensives",
+            "Ace Inhibitors Combined With Diuretics",
+            "Ace Inhibitors Plain"
+          ]
+        },
+        {
+          "id": 7,
+          "parent": "Derma",
+          "children": [
+            "Anti Dandruff",
+            "Anti Pruritics Including Topical Antihistamines Anaesthetics Etc",
+            "Antiseptics And Disinfectants Human Use",
+            "Demelanising Agents",
+            "Ectoparasiticides Including Scabicides",
+            "Emollients Protectives",
+            "Haircare Products",
+            "Melanising Agents",
+            "Oral Anti Acne Preparations",
+            "Other Dermatological Preparations",
+            "Other Non Steroidal Products For Inflammatory Skin Disorders",
+            "Plain Topical Corticosteroids",
+            "Skin Dermal Epidermal Preparations",
+            "Systemic Antipsoriasis Prodcuts",
+            "Topical Anti Acne Preparations",
+            "Topical Antibiotics And Or Sulphonamids",
+            "Topical Antipsoriasis Products",
+            "Topical Antivirals",
+            "Topical Corticosteroid Combinations",
+            "Topical Dermatological Antifungals"
+          ]
+        },
+        {
+          "id": 8,
+          "parent": "Gastro Intestinal",
+          "children": [
+            "All Other Antidiarrhoeals",
+            "All Other Anti Ulcerants"
+          ]
+        },
+        {
+          "id": 9,
+          "parent": "Gynaecological",
+          "children": [
+            "Agents For Fungal Infections",
+            "Androgens Excluding G3E G3F"
+          ]
+        },
+        {
+          "id": 10,
+          "parent": "Hormones",
+          "children": [
+            "Acth",
+            "Anabolic Hormones Systemic"
+          ]
+        },
+        {
+          "id": 11,
+          "parent": "Neuro Cns",
+          "children": [
+            "All Other Cns Drugs",
+            "Anti Alzheimer Products"
+          ]
+        },
+        {
+          "id": 12,
+          "parent": "Ophthal",
+          "children": [
+            "Artificial Tears And Ocular Lubricants",
+            "Miotics And Antiglaucoma Preparations"
+          ]
+        },
+        {
+          "id": 13,
+          "parent": "Ophthal Otologicals",
+          "children": [
+            "Eye Ear Anti Infectives",
+            "Eye Ear Anti Infectives Corticosteroid Combinations"
+          ]
+        },
+        {
+          "id": 14,
+          "parent": "Others",
+          "children": [
+            "Allergens",
+            "All Other Non Therapeutic Products"
+          ]
+        },
+        {
+          "id": 15,
+          "parent": "Otologicals",
+          "children": [
+            "Other Otologicals",
+            "Otological Anti Infectives"
+          ]
+        },
+        {
+          "id": 16,
+          "parent": "Pain Analgesics",
+          "children": [
+            "All Other Musculoskeletal Products",
+            "Anaesthetics General Inhalation"
+          ]
+        },
+        {
+          "id": 17,
+          "parent": "Respiratory",
+          "children": [
+            "All Other Anti Asthma And Copd Products",
+            "Antitussive Bronchodilator Expectorant"
+          ]
+        },
+        {
+          "id": 18,
+          "parent": "Urology",
+          "children": [
+            "All Other Urological Products",
+            "Benign Prostatic Hypertrophy Bph Products"
+          ]
+        },
+        {
+          "id": 19,
+          "parent": "Vaccines",
+          "children": [
+            "All Other Vaccines",
+            "Antitoxic Sera"
+          ]
+        },
+        {
+          "id": 20,
+          "parent": "Vitamins Minerals Nutrients",
+          "children": [
+            "Amino Acid Solutions Except Those Containing Fats",
+            "Appetite Stimulants"
+          ]
+        }
+      ],
+    "products": [
+        {
+          "id": 11,
+          "name": "Vitamin E Supplement",
+          "description": "Description of Vitamin E Supplement",
+          "price": 12,
+          "brand": "Inlife",
+          "usage": "Skin Care",
+          "customerRating": 4.6,
+          "discount": 0
+        },
+        {
+          "id": 12,
+          "name": "Turmeric Curcumin Capsules",
+          "description": "Description of Turmeric Curcumin Capsules",
+          "price": 18,
+          "brand": "HealthyHey",
+          "usage": "Joint Health",
+          "customerRating": 4.3,
+          "discount": 10
+        },
+        {
+          "id": 13,
+          "name": "Magnesium Citrate Supplement",
+          "description": "Description of Magnesium Citrate Supplement",
+          "price": 22,
+          "brand": "HealthVit",
+          "usage": "Muscle Relaxation",
+          "customerRating": 4.7,
+          "discount": 15
+        },
+        {
+          "id": 14,
+          "name": "Protein Powder",
+          "description": "Description of Protein Powder",
+          "price": 27,
+          "brand": "MyFitFuel",
+          "usage": "Muscle Building",
+          "customerRating": 4.5,
+          "discount": 5
+        },
+        {
+          "id": 15,
+          "name": "Green Tea Extract",
+          "description": "Description of Green Tea Extract",
+          "price": 32,
+          "brand": "Now Foods",
+          "usage": "Weight Management",
+          "customerRating": 4.4,
+          "discount": 20
+        },
+        {
+          "id": 16,
+          "name": "Zinc Supplement",
+          "description": "Description of Zinc Supplement",
+          "price": 37,
+          "brand": "Inlife",
+          "usage": "Immune Support",
+          "customerRating": 4.8,
+          "discount": 10
+        },
+        {
+          "id": 17,
+          "name": "Ashwagandha Capsules",
+          "description": "Description of Ashwagandha Capsules",
+          "price": 42,
+          "brand": "HealthyHey",
+          "usage": "Stress Relief",
+          "customerRating": 4.2,
+          "discount": 15
+        },
+        {
+          "id": 18,
+          "name": "Vitamin B Complex",
+          "description": "Description of Vitamin B Complex",
+          "price": 47,
+          "brand": "HealthVit",
+          "usage": "Energy Boost",
+          "customerRating": 4.9,
+          "discount": 5
+        },
+        {
+          "id": 19,
+          "name": "Melatonin Tablets",
+          "description": "Description of Melatonin Tablets",
+          "price": 52,
+          "brand": "MyFitFuel",
+          "usage": "Sleep Aid",
+          "customerRating": 4.3,
+          "discount": 0
+        },
+        {
+          "id": 20,
+          "name": "Garcinia Cambogia Extract",
+          "description": "Description of Garcinia Cambogia Extract",
+          "price": 57,
+          "brand": "Now Foods",
+          "usage": "Appetite Control",
+          "customerRating": 4.8,
+          "discount": 10
+        },
+        {
+          "id": 21,
+          "name": "Coenzyme Q10 Supplement",
+          "description": "Description of Coenzyme Q10 Supplement",
+          "price": 11,
+          "brand": "Inlife",
+          "usage": "Heart Health",
+          "customerRating": 4.5,
+          "discount": 0
+        },
+        {
+          "id": 22,
+          "name": "L-Arginine Capsules",
+          "description": "Description of L-Arginine Capsules",
+          "price": 17,
+          "brand": "HealthyHey",
+          "usage": "Blood Circulation",
+          "customerRating": 4.2,
+          "discount": 10
+        },
+        {
+          "id": 23,
+          "name": "Collagen Powder",
+          "description": "Description of Collagen Powder",
+          "price": 21,
+          "brand": "HealthVit",
+          "usage": "Skin Elasticity",
+          "customerRating": 4.8,
+          "discount": 15
+        },
+        {
+          "id": 24,
+          "name": "MCT Oil",
+          "description": "Description of MCT Oil",
+          "price": 26,
+          "brand": "MyFitFuel",
+          "usage": "Ketogenic Diet",
+          "customerRating": 4.6,
+          "discount": 5
+        },
+        {
+          "id": 25,
+          "name": "Fiber Supplement",
+          "description": "Description of Fiber Supplement",
+          "price": 31,
+          "brand": "Now Foods",
+          "usage": "Digestive Health",
+          "customerRating": 4.4,
+          "discount": 20
+        },
+        {
+          "id": 26,
+          "name": "Spirulina Tablets",
+          "description": "Description of Spirulina Tablets",
+          "price": 36,
+          "brand": "Inlife",
+          "usage": "Detoxification",
+          "customerRating": 4.7,
+          "discount": 10
+        },
+        {
+          "id": 27,
+          "name": "Vitamin K2 Supplement",
+          "description": "Description of Vitamin K2 Supplement",
+          "price": 41,
+          "brand": "HealthyHey",
+          "usage": "Bone Health",
+          "customerRating": 4.3,
+          "discount": 15
+        },
+        {
+          "id": 28,
+          "name": "L-Glutamine Powder",
+          "description": "Description of L-Glutamine Powder",
+          "price": 46,
+          "brand": "HealthVit",
+          "usage": "Muscle Recovery",
+          "customerRating": 4.9,
+          "discount": 5
+        },
+        {
+          "id": 29,
+          "name": "Maca Root Capsules",
+          "description": "Description of Maca Root Capsules",
+          "price": 51,
+          "brand": "MyFitFuel",
+          "usage": "Hormonal Balance",
+          "customerRating": 4.2,
+          "discount": 0
+        },
+        {
+          "id": 30,
+          "name": "Saw Palmetto Supplement",
+          "description": "Description of Saw Palmetto Supplement",
+          "price": 56,
+          "brand": "Now Foods",
+          "usage": "Prostate Health",
+          "customerRating": 4.8,
+          "discount": 10
+        },
+        {
+          "id": 31,
+          "name": "Vitamin D3 Supplement",
+          "description": "Description of Vitamin D3 Supplement",
+          "price": 13,
+          "brand": "Vitabiotics",
+          "usage": "Bone Health",
+          "customerRating": 4.6,
+          "discount": 0
+        },
+        {
+          "id": 32,
+          "name": "Omega-3 Fish Oil",
+          "description": "Description of Omega-3 Fish Oil",
+          "price": 19,
+          "brand": "Nature's Bounty",
+          "usage": "Heart Health",
+          "customerRating": 4.3,
+          "discount": 10
+        },
+        {
+          "id": 33,
+          "name": "Probiotic Supplement",
+          "description": "Description of Probiotic Supplement",
+          "price": 23,
+          "brand": "Nutrilite",
+          "usage": "Digestive Health",
+          "customerRating": 4.7,
+          "discount": 15
+        },
+        {
+          "id": 34,
+          "name": "Vitamin C Chewables",
+          "description": "Description of Vitamin C Chewables",
+          "price": 28,
+          "brand": "Garden of Life",
+          "usage": "Immune Support",
+          "customerRating": 4.5,
+          "discount": 5
+        },
+        {
+          "id": 35,
+          "name": "Calcium and Vitamin D Supplement",
+          "description": "Description of Calcium and Vitamin D Supplement",
+          "price": 33,
+          "brand": "SmartyPants",
+          "usage": "Bone Health",
+          "customerRating": 4.9,
+          "discount": 0
+        },
+        {
+          "id": 36,
+          "name": "Hair, Skin, and Nails Supplement",
+          "description": "Description of Hair, Skin, and Nails Supplement",
+          "price": 38,
+          "brand": "Rainbow Light",
+          "usage": "Beauty Care",
+          "customerRating": 4.2,
+          "discount": 10
+        },
+        {
+          "id": 37,
+          "name": "Joint Support Capsules",
+          "description": "Description of Joint Support Capsules",
+          "price": 43,
+          "brand": "Solgar",
+          "usage": "Joint Health",
+          "customerRating": 4.8,
+          "discount": 15
+        },
+        {
+          "id": 38,
+          "name": "Vitamin B12 Supplement",
+          "description": "Description of Vitamin B12 Supplement",
+          "price": 48,
+          "brand": "Kirkland Signature",
+          "usage": "Energy Boost",
+          "customerRating": 4.4,
+          "discount": 20
+        },
+        {
+          "id": 39,
+          "name": "Iron Supplement",
+          "description": "Description of Iron Supplement",
+          "price": 53,
+          "brand": "Centrum",
+          "usage": "Anemia Management",
+          "customerRating": 4.7,
+          "discount": 10
+        },
+        {
+          "id": 40,
+          "name": "Ashwagandha Capsules",
+          "description": "Description of Ashwagandha Capsules",
+          "price": 58,
+          "brand": "NOW",
+          "usage": "Stress Relief",
+          "customerRating": 4.5,
+          "discount": 5
+        }
+      ]
+  }
+  
