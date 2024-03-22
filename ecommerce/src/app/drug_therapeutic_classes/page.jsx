@@ -6,8 +6,6 @@ const drugs_therapeutic = () => {
   return (
     <div className=''>
 
-
-
         {/* <div className='grid grid-cols-2'> */}
         <div className=''><Drug_Therapeutic_Side_Bar/></div>
         {/* <div className='w-2/3'>Content</div> */}

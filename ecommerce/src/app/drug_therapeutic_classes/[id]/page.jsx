@@ -4,7 +4,7 @@ import getAllTherapeuticData from '@/lib/allTherapeuticData';
 
 export default async function therapeuticMedicine({params}) {
   const therapeuticMedicine = await getAllTherapeuticData();
-  // const filteredData = therapeuticMedicine.filter(item => item.id === parseInt(params.id, 10));
+  
   return (
     <div>
       <div className="grid grid-cols-1 mt-3 ml-4">
