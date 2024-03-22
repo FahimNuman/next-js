@@ -95,7 +95,6 @@ const page = () => {
             </div>
           </div>
         </div>
-
       </div>
 
       <div className='bg-[#f8f8f8] flex flex-col md:flex-row'>
@@ -174,7 +173,6 @@ const page = () => {
           <div className='w-full'>
             <div className='rating-div w-full md:w-2/5'>
               <Rating />
-
             </div>
             <Comment_Secion />
           </div>
@@ -252,7 +250,7 @@ const page = () => {
                 <div className='h-16 w-16'><img src="	https://1mgstaticfiles.s3.amazonaws.com/skuicons/delivery.png" alt="" /></div>
                 <div className='text-center w-1/2'>Home Delivery</div>
               </div>
-        
+
             </div>
 
           </div>
@@ -260,8 +258,6 @@ const page = () => {
         
         </div>
       </div>
-
-      
     </div>
   )
 }
