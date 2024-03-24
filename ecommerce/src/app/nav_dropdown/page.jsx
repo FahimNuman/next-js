@@ -76,7 +76,8 @@ const Nav_DropDown = () => {
                     .map(category => (
                       <li key={category.CategoryID}>
                         <Link
-                          href={`/category/${category.CategoryID}`}
+                        href={category.PagePath}
+                        // href={`/category/${category.PagePath}`}
                           className="hover:bg-slate-50 flex items-center p-2 hover:text-orange-300 text-black font-bold"
                         >
                           {category.CategoryName}
