@@ -23,20 +23,21 @@ const Nav_DropDown = () => {
   const { serviceTypes, categories, subCategories } = data;
 
   return (
-    <div className="navbar bg-base-100 z-100 h-5" style={{ zIndex: 9999, display: 'flex', padding: '0.5rem', minHeight: '2rem', width: '100%', justifyContent: 'space-around', alignItems: 'center', border: '0.5px solid #ccc' }}>
-    <nav className="flex justify-center">
-        <ul className="flex flex-wrap items-center text-sm">
+    <div className="navbar bg-base-100 z-100 justify-around border border-slate-100 h-5" style={{ zIndex: 9999 }}>
+      <nav className="flex justify-center ">
+        <ul className="flex flex-wrap items-center text-sm ">
           {serviceTypes.map(serviceType => (
-            <li
-              key={serviceType.ServiceTypeID}
-              className="p-4 lg:px-4 relative flex items-center space-x-1 "
-              style={{
-                paddingLeft: '0.5rem',
-                paddingRight: '0.5rem'
-              }}
-              onMouseEnter={() => setHoveredServiceType(serviceType.ServiceTypeID)}
-              onMouseLeave={() => setHoveredServiceType(null)}
-            >
+           <li
+           key={serviceType.ServiceTypeID}
+           className="p-4 lg:px-4 relative flex items-center space-x-1 "
+           style={{
+             paddingLeft: '0.5rem', 
+             paddingRight: '0.5rem' 
+           }}
+           onMouseEnter={() => setHoveredServiceType(serviceType.ServiceTypeID)}
+           onMouseLeave={() => setHoveredServiceType(null)}
+         >
+         
               <a
                 className="text-slate-800 hover:text-slate-900 "
                 href="#0"
