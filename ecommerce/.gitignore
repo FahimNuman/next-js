@@ -47,4 +47,9 @@ netlify.toml
 .pnp.loader.mjs
 .yarn/unplugged/
 
-.package.json
+
+
+ecommerce/package-lock.json
+ecommerce/package.json
+ecommerce/yarn.lock
+

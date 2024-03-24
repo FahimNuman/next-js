@@ -8,16 +8,8 @@ const Navbar = () => {
         <div className="flex-1">
           <Link href="/" className="size-22">
             <strong>
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_qk4ycDPBhejplCpLWK9dvtSfRFb3Xc1AXBl8FIkBNf5T2icOslBBJLoxbwxti7QHG0&usqp=CAU"
-                alt=""
-                style={{
-                  width: '50px',
-                  height: 'auto',
-                  display: 'inline-block',
-                }}
-              />
-              Fortis Mart
+             
+              <span className='text-2xl'>FORTIS</span> <span className='text-2xl border-t-4 border-l-4 border-teal-300 '>M</span>  <span className='text-2xl border-r-4 border-b-4 border-teal-300'>G</span>
             </strong>
           </Link>
         </div>

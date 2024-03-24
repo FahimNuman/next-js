@@ -201,10 +201,10 @@ const Carousel = () => {
             />
           </div>
         </div>
-        <div className="p-6 py-12 dark:bg-violet-400 text-teal-700 bg-white-500 text-lg bg-white text-center justify-center border-b border-gray-200">
-          Fortis mg: BD’s Leading Online Pharmacy & Healthcare Platform
-        </div>
-      </div>
+        <div className="p-6 bg-white dark:bg-tile-400 text-teal-700 text-lg text-center justify-center border-b border-gray-200" style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
+  Fortis mg: BD’s Leading Online Pharmacy & Healthcare Platform
+</div>
+</div>
     </>
   )
 }
