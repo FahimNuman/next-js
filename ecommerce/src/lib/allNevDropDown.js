@@ -1,5 +1,6 @@
 export default async function getAllNevDropDown() {
   try {
+    console.log("getAllNevDropDown");
     const serviceTypesResponse = await fetch('http://localhost:5047/api/FrontendApi/NavDropDown/GetServiceType');
     const serviceTypes = await serviceTypesResponse.json();
 
@@ -9,7 +10,7 @@ export default async function getAllNevDropDown() {
     });
 
     const categoriesArrays = await Promise.all(categoriesPromises);
-    const categories = categoriesArrays.flat(); //--------------- Flatten the array of arrays
+    const categories = categoriesArrays.flat(); 
 
     const subCategories = {};
 
