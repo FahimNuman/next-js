@@ -1,5 +1,5 @@
 export default async function getAllProducts(){
-    const result = await fetch('http://localhost:4000/products',{
+    const result = await fetch('http://localhost:5047/api/FrontendApi/Product/GetSku?SubCategoryID=2',{
     
         next:{
             revalidate: 5
