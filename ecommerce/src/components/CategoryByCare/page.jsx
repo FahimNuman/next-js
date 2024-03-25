@@ -13,7 +13,8 @@ export default async function Posts() {
         <Link href={`@/src/app/`}>
           <div className="sm:w-32 sm:h-32 max-w-32 max-h-24 flex justify-center items-center">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtELB6BLBdGNjRrLnSK3G8fkX9m4FVF3yWlsqhBG2HCmg-Leoh-OuFCscijxBeMc87ZMo&usqp=CAU"
+              src="http://localhost:5047/Files/Images/SkuImages/1.png"
+              
               alt=""
               className="object-cover object-center rounded-md max-w-full max-h-full"
             />

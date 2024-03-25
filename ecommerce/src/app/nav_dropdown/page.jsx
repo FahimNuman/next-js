@@ -31,8 +31,8 @@ const Nav_DropDown = () => {
            key={serviceType.ServiceTypeID}
            className="p-4 lg:px-4 relative flex items-center space-x-1 "
            style={{
-             paddingLeft: '0.5rem', 
-             paddingRight: '0.5rem' 
+             paddingLeft: '0.1rem', 
+             paddingRight: '0.1rem' 
            }}
            onMouseEnter={() => setHoveredServiceType(serviceType.ServiceTypeID)}
            onMouseLeave={() => setHoveredServiceType(null)}
