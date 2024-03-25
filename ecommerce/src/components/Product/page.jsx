@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const SingleProduct = ({ product, id }) => {
+const SingleProduct = ({ product }) => {
   return (
     <div className='card-wrapper flex flex-col'>
       <div className="card w-64 bg-base-100 shadow-xl border-2 h-96">
@@ -27,7 +27,7 @@ const AllProducts = ({ products }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {products.map(product => (
-        <Link href={`/Product/${product.SkuID}`} key={product.SkuID}>
+        <Link href={`/multivitamin/${product.SkuID}`} key={product.SkuID}>
           <SingleProduct product={product} id={product.SkuID} />
         </Link>
       ))}
