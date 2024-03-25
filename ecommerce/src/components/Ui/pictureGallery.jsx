@@ -1,9 +1,10 @@
 'use client'
 import React, { useState } from 'react';
 
-const PictureGallery = () => {
+const PictureGallery = ({image}) => {
+ 
   const images = [
-    'https://onemg.gumlet.io/l_watermark_346,w_120,h_120,c_fit,q_auto,f_auto/r8lapi5qwlwzabxbbz6e.jpg',
+    `http://localhost:5047/${image}`,
     'https://onemg.gumlet.io/l_watermark_346,w_120,h_120,c_fit,q_auto,f_auto/jx0bktwqliah4njccdjf.jpg',
     'https://onemg.gumlet.io/l_watermark_346,w_120,h_120,c_fit,q_auto,f_auto/na12bpyfymzuwe2onzns.jpg',
     'https://onemg.gumlet.io/l_watermark_346,w_120,h_120,c_fit,q_auto,f_auto/haamssccygb116mxtuz6.jpg',
@@ -39,6 +40,7 @@ const PictureGallery = () => {
 
   return (
     <div className="flex">
+  
       <div className="flex flex-col items-start">
         {images.map((image, index) => (
           <img

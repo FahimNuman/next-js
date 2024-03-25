@@ -68,7 +68,7 @@ const Page = () => {
             {/* ... Same options for sorting */}
           </select>
         </div>
-        <h2>All Products</h2>
+        <h2 className='font-semibold text-2xl py-4'>All Products</h2>
         <AllProducts products={currentItems} />
         <div className="flex gap-4 justify-center my-4">
           {/* ... Same pagination logic */}

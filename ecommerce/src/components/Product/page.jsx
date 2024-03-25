@@ -4,16 +4,16 @@ import Link from 'next/link';
 const SingleProduct = ({ product }) => {
   return (
     <div className='card-wrapper flex flex-col'>
-      <div className="card w-64 bg-base-100 shadow-xl border-2 h-96">
-        <div className=''>
+      <div className="card w-64 bg-base-100 shadow-xl border-2 h-fit">
+        <div className='my-4'>
           <figure className="">
             <img src={`http://localhost:5047/${product.SkuImage}`} alt="Shoes" className="rounded-xl h-20" />
           </figure>
-          <div className="card-body items-center text-center ">
+          <div className="flex flex-col items-center pt-5">
             <h2 className="card-title">{product.SkuName}</h2>
             <h2 className="card-title">{product.SkuBrandName}</h2>
             <p>100$</p>
-            <div className="card-actions">
+            <div className="card-actions mt-4">
               <button className="btn">Buy Now</button>
             </div>
           </div>

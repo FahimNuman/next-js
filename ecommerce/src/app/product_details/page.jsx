@@ -1,16 +1,8 @@
 'use client'
-
-import Category_Side_Bar from '@/components/Sidebars/Category_Side_Bar/page'
-import Slider from '@/components/Slider/page'
-import Slider2 from '@/components/Slider2/page'
-import Breadcrumb_custom from '@/components/Ui/breadcrumb'
 import Comment_Secion from '@/components/Ui/comment'
 import FrequentlyBoughtTogether from '@/components/Ui/frequentlyBought'
-import FrequentlyBought from '@/components/Ui/frequentlyBought'
 import PictureGallery from '@/components/Ui/pictureGallery'
 import Rating from '@/components/Ui/rating'
-import { Carousel } from 'flowbite-react'
-import { Content } from 'next/font/google'
 import React, { useState } from 'react'
 
 const page = () => {
