@@ -1,16 +1,56 @@
 import React, { useState, useEffect } from 'react';
+import getAllBrands from '@/lib/allBrands'; // Import the function to fetch brand names
 
-const Sidebar = ({ products, updateFilteredProducts, handleFilterChange }) => {
+const Sidebar = ({ products, updateFilteredProducts }) => {
   const [brands, setBrands] = useState([]);
   const [usages, setUsages] = useState([]);
+  const [brandOptions, setBrandOptions] = useState([]);
 
   useEffect(() => {
     updateFilteredProducts(products);
   }, [products]);
 
   useEffect(() => {
+    fetchBrandOptions(); // Fetch brand names when component mounts
+  }, []);
+
+  useEffect(() => {
     filterProducts();
   }, [brands, usages]);
+
+  const fetchBrandOptions = async () => {
+    try {
+      const brandNames = await getAllBrands();
+      setBrandOptions(brandNames);
+    } catch (error) {
+      console.error('Error fetching brand names:', error);
+    }
+  };
+
+  const handleFilterChange = (filterType, value) => {
+    switch (filterType) {
+      case 'Brands':
+        setBrands(brands => {
+          if (brands.includes(value)) {
+            return brands.filter(brand => brand !== value);
+          } else {
+            return [...brands, value];
+          }
+        });
+        break;
+      case 'Usages':
+        setUsages(usages => {
+          if (usages.includes(value)) {
+            return usages.filter(usage => usage !== value);
+          } else {
+            return [...usages, value];
+          }
+        });
+        break;
+      default:
+        break;
+    }
+  };
 
   const filterProducts = () => {
     let filtered = products.filter(product => {
@@ -22,9 +62,6 @@ const Sidebar = ({ products, updateFilteredProducts, handleFilterChange }) => {
   };
 
   const renderBrandOptions = () => {
-    const brandOptions = ['ACI', 'Radient', 'ACME', 'MyFitFuel', 'Now Foods',
-      'Vitabiotics', 'Natures Bounty', 'Nutrilite'];
-
     return (
       <div className="my-3">
         <h3 className='text-xl font-semibold py-2'>BRANDS</h3>

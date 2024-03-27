@@ -118,11 +118,8 @@ const Page = () => {
             <option value="discount">Discount</option>
           </select>
         </div>
-        <h2 className='font-semibold text-2xl my-4'>All Products</h2>
-        <div className='m-4'>
+        <h2>All Products</h2>
         <AllProducts products={currentItems} />
-        </div>
-        
         {/* Pagination */}
         <div className='flex gap-4 justify-center my-4'>
           {getPageNumbers().map(number => (
