@@ -36,13 +36,14 @@ const Drug_Therapeutic_Side_Bar = () => {
           ))}
         </ul>
       </div>
+      {/* ${expandedMenu}/${child} */}
       <div className="w-3/4 h-screen text-[#ff766b]">
         {expandedMenu && (
           <div className="p-4 text-lg">
             <ul>
               {menuItems.find((menuItem) => menuItem.id === expandedMenu).children.map((child, index) => (
                 <li key={index}>
-                  <Link href={`/drug_therapeutic_classes/${expandedMenu}/${child}`}>
+                  <Link href={`/drug_therapeutic_classes/id`}> 
                     {`>  ` + child}
                   </Link>
                 </li>
