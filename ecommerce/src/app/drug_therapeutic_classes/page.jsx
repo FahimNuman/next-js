@@ -3,7 +3,7 @@ import Drug_Therapeutic_Side_Bar from '@/components/Sidebars/Drug_Therapeutic_Si
 import React from 'react'
 
 const drugs_therapeutic = () => {
-  console.log(111,11);
+  
   return (
     <div className=''>
 
