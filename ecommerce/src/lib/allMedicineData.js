@@ -1,5 +1,5 @@
 export default async function getAllMedicine(){
-    const result = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=10',{
+    const result = await fetch('http://localhost:5047/api/FrontendApi/NavDropDown/GetAllDisease?CategoryID=30',{
     
         next:{
             revalidate: 5
