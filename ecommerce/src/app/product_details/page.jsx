@@ -242,12 +242,8 @@ const page = () => {
                 <div className='h-16 w-16'><img src="	https://1mgstaticfiles.s3.amazonaws.com/skuicons/delivery.png" alt="" /></div>
                 <div className='text-center w-1/2'>Home Delivery</div>
               </div>
-
             </div>
-
           </div>
-
-        
         </div>
       </div>
     </div>
